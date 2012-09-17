@@ -63,12 +63,14 @@
             {% endblock %}
             
             {% block submenu %}
+                
+                <!-- SI está en la home deben aparecer dos submenúes -->
                 {% if (app.request.get('_route') == 'homepage'
                                     or app.request.get('_route') == 'quienesomos'
                                     or app.request.get('_route') == 'historia')  %}
                       <div class="sub-nav">
                         <nav>
-                          <ul class="sub-nav">
+                          <ul class="sub-nav" style="background-color: green">
                             <li>
                               <a href="{{ path('quienesomos') }}"> QUIENES SOMOS </a>
                             </li>
@@ -79,6 +81,34 @@
                         </nav>
                       </div>
                 {% endif %}
+            
+                <!-- SI está en servicios deben aparecer dos submenúes -->
+                {% if (app.request.get('_route') == 'servicios'
+                                    or app.request.get('_route') == 'seguridad'
+                                    or app.request.get('_route') == 'placavideo'
+                                    or app.request.get('_route') == 'notebook'
+                                    or app.request.get('_route') == 'motherboard')  %}
+                      <div class="sub-nav">
+                        <nav>
+                          <ul class="sub-nav" style="background-color: green">
+                            <li>
+                              <a href="{{ path('motherboard') }}"> MOTHERBOARD </a>
+                            </li>
+                            <li>
+                              <a href="{{ path('notebook') }}"> NOTEBOOK </a>
+                            </li>
+                          <li>
+                              <a href="{{ path('placavideo') }}"> PLACA DE VIDEO </a>
+                            </li>
+                          <li>
+                              <a href="{{ path('seguridad') }}"> SEGURIDAD </a>
+                            </li>
+                          
+                          </ul>
+                        </nav>
+                      </div>
+                {% endif %}
+
             {% endblock %}
 
             <div class="body">

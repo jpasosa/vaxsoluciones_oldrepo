@@ -2,6 +2,8 @@
 #    pattern:  /hello/{name}
 #    defaults: { _controller: VaxFrontBundle:Default:index }
 
+
+
 # HOME
 homepage:
     pattern:  /
@@ -17,30 +19,67 @@ historia:
     pattern:  /historia
     defaults: { _controller: VaxFrontBundle:Page:history }
 
+
+
+
 # SERVICIOS
 servicios:
     pattern:  /servicios
     defaults: { _controller: VaxFrontBundle:Page:service }
+
+# SERVICIOS - MOTHERBOARD (submenú)
+motherboard:
+    pattern:  /servicios/motherboard
+    defaults: { _controller: VaxFrontBundle:Page:mother }
+
+# SERVICIOS - NOTEBOOK (submenú)
+notebook:
+    pattern:  /servicios/notebook
+    defaults: { _controller: VaxFrontBundle:Page:notebook }
+
+# SERVICIOS - PLACA DE VIDEO (submenú)
+placavideo:
+    pattern:  /servicios/placa-de-video
+    defaults: { _controller: VaxFrontBundle:Page:videocard }
+
+# SERVICIOS - SEGURIDAD Y COMUNICACIONES (submenú)
+seguridad:
+    pattern:  /servicios/seguridad-y-comunicaciones
+    defaults: { _controller: VaxFrontBundle:Page:security }
+
+
 
 # NUESTROS CLIENTES
 clientes:
     pattern:  /nuestros-clientes
     defaults: { _controller: VaxFrontBundle:Page:clients }
 
+
+
+
 # UBIQUITI
 ubiquiti:
     pattern:  /ubiquiti
     defaults: { _controller: VaxFrontBundle:Page:ubiquiti }
+
+
+
 
 # OFERTAS
 ofertas:
     pattern:  /ofertas
     defaults: { _controller: VaxFrontBundle:Page:deals }
 
+
+
+
 # FAQ
 faq:
     pattern:  /faq
     defaults: { _controller: VaxFrontBundle:Page:faq }
+
+
+
 
 # CONTACTO
 contacto:
