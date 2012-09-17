@@ -1,3 +1,49 @@
-vax_front_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: VaxFrontBundle:Default:index }
+#vax_front_homepage:
+#    pattern:  /hello/{name}
+#    defaults: { _controller: VaxFrontBundle:Default:index }
+
+# HOME
+homepage:
+    pattern:  /
+    defaults: { _controller: VaxFrontBundle:Page:homepage }
+
+# HOME - QUIENES SOMOS (submenú)
+quienesomos:
+    pattern:  /quienes-somos
+    defaults: { _controller: VaxFrontBundle:Page:aboutus }
+
+# HOME - HISTORIA (submenú)
+historia:
+    pattern:  /historia
+    defaults: { _controller: VaxFrontBundle:Page:history }
+
+# SERVICIOS
+servicios:
+    pattern:  /servicios
+    defaults: { _controller: VaxFrontBundle:Page:service }
+
+# NUESTROS CLIENTES
+clientes:
+    pattern:  /nuestros-clientes
+    defaults: { _controller: VaxFrontBundle:Page:clients }
+
+# UBIQUITI
+ubiquiti:
+    pattern:  /ubiquiti
+    defaults: { _controller: VaxFrontBundle:Page:ubiquiti }
+
+# OFERTAS
+ofertas:
+    pattern:  /ofertas
+    defaults: { _controller: VaxFrontBundle:Page:deals }
+
+# FAQ
+faq:
+    pattern:  /faq
+    defaults: { _controller: VaxFrontBundle:Page:faq }
+
+# CONTACTO
+contacto:
+    pattern:  /contacto
+    defaults: { _controller: VaxFrontBundle:Page:contact }
+

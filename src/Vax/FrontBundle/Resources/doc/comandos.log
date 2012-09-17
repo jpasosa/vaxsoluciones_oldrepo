@@ -103,3 +103,34 @@ Installing assets for Symfony\Bundle\WebProfilerBundle into web/bundles/webprofi
 Installing assets for Sensio\Bundle\DistributionBundle into web/bundles/sensiodistribution
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17-septiembre-2012
+-------------------------------
+[juampa@naranja vaxsoluciones]$ app/console assets:install web
+Installing assets using the hard copy option
+Installing assets for Symfony\Bundle\FrameworkBundle into web/bundles/framework
+Installing assets for Vax\FrontBundle into web/bundles/vaxfront
+Installing assets for Acme\DemoBundle into web/bundles/acmedemo
+Installing assets for Symfony\Bundle\WebProfilerBundle into web/bundles/webprofiler
+Installing assets for Sensio\Bundle\DistributionBundle into web/bundles/sensiodistribution

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>
+            {% block title %}
+                :: VAXSOLUCIONES ::
+            {% endblock %}
+        </title>
+        
+        
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/vaxfront/css/main.css') }}" type="text/css" rel="stylesheet" />
+            <link rel="shortcut icon" type="image/icon" href="{{ asset('bundles/vaxfront/images/vax.ico') }}" />
+        {% endblock %}
+        
+
+        {% block javascripts %}
+        
+        {% endblock %}
+    
+    </head>
+    
+    <body>
+        
+        <div class="out-container">        
+            <div class="header">
+                {% block header %}
+                    <a href="{{ path('homepage') }}"> 
+                        <img class="banner" width="853" height="117" src="{{ asset('bundles/vaxfront/images/banner.jpg') }}" alt="banner" />
+                    </a>
+                {% endblock %}
+            </div>
+            {% block menu %}
+                <div class="nav-container">
+                    <nav>
+                        <ul class="nav">
+                            <li>
+                                <a href="{{ path('homepage') }}"> HOME </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('servicios') }}"> SERVICIOS </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('clientes') }}"> NUESTROS CLIENTES </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('ubiquiti') }}"> UBIQUITI </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('ofertas') }}"> OFERTAS </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('faq') }}"> FAQ </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('contacto') }}"> CONTACTO </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            {% endblock %}
+            
+            {% block submenu %}
+                {% if (app.request.get('_route') == 'homepage'
+                                    or app.request.get('_route') == 'quienesomos'
+                                    or app.request.get('_route') == 'historia')  %}
+                      <div class="sub-nav">
+                        <nav>
+                          <ul class="sub-nav">
+                            <li>
+                              <a href="{{ path('quienesomos') }}"> QUIENES SOMOS </a>
+                            </li>
+                            <li>
+                              <a href="{{ path('historia') }}"> HISTORIA </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                {% endif %}
+            {% endblock %}
+
+            <div class="body">
+                {% block body %} {% endblock %}                        
+            </div>
+            
+            <div class="footer">
+                {% block footer %}
+                    aquí va el footer
+                {% endblock %}
+            </div>
+    </body>
+</html>
