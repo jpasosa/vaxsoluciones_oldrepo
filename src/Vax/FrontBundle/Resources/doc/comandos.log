@@ -1,0 +1,105 @@
+
+
+
+17-septiembre-2012
+-------------------------------
+[juampa@naranja vaxsoluciones]$ curl -s https://getcomposer.org/installer | php
+#!/usr/bin/env php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: /var/www/html/vaxsoluciones/composer.phar
+Use it: php composer.phar
+
+
+
+
+
+
+
+
+17-septiembre-2012
+-------------------------------
+[juampa@naranja vaxsoluciones]$ php composer.phar install
+Loading composer repositories with package information
+Installing dependencies from lock file
+Your lock file is out of sync with your composer.json, run "composer.phar update" to update dependencies
+  - Installing doctrine/common (2.3.0-RC2)
+    Downloading: 100%         
+
+  - Installing doctrine/dbal (2.3.0-RC3)
+    Downloading: 100%         
+
+  - Installing twig/twig (v1.9.2)
+    Downloading: 100%         
+
+  - Installing symfony/symfony (v2.1.1)
+    Downloading: 100%         
+
+  - Installing doctrine/doctrine-bundle (v1.0.0)
+    Downloading: 100%         
+
+  - Installing swiftmailer/swiftmailer (v4.2.1)
+    Downloading: 100%         
+
+  - Installing monolog/monolog (1.2.1)
+    Downloading: 100%         
+
+  - Installing doctrine/orm (2.3.0-RC3)
+    Downloading: 100%         
+
+    Skipped installation of bin/doctrine for package doctrine/orm: name conflicts with an existing file
+    Skipped installation of bin/doctrine.php for package doctrine/orm: name conflicts with an existing file
+  - Installing jms/cg (1.0.0)
+    Downloading: 100%         
+
+  - Installing jms/metadata (1.1.1)
+    Downloading: 100%         
+
+  - Installing jms/aop-bundle (1.0.0)
+    Downloading: 100%         
+
+  - Installing jms/di-extra-bundle (1.1.0)
+    Downloading: 100%         
+
+  - Installing jms/security-extra-bundle (1.2.0)
+    Downloading: 100%         
+
+  - Installing sensio/distribution-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing sensio/framework-extra-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing sensio/generator-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing kriswallsmith/assetic (v1.1.0-alpha1)
+    Downloading: 100%         
+
+  - Installing symfony/assetic-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing symfony/monolog-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing symfony/swiftmailer-bundle (v2.1.0)
+    Downloading: 100%         
+
+  - Installing twig/extensions (v1.0.0-alpha)
+    Downloading: 100%         
+
+monolog/monolog suggests installing mlehner/gelf-php (Allow sending log messages to a GrayLog2 server)
+monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
+kriswallsmith/assetic suggests installing leafo/lessphp (Assetic provides the integration with the lessphp LESS compiler)
+kriswallsmith/assetic suggests installing leafo/scssphp (Assetic provides the integration with the scssphp SCSS compiler)
+kriswallsmith/assetic suggests installing ptachoire/cssembed (Assetic provides the integration with phpcssembed to embed data uris)
+Generating autoload files
+Clearing the cache for the dev environment with debug true
+Installing assets using the hard copy option
+Installing assets for Symfony\Bundle\FrameworkBundle into web/bundles/framework
+Installing assets for Acme\DemoBundle into web/bundles/acmedemo
+Installing assets for Symfony\Bundle\WebProfilerBundle into web/bundles/webprofiler
+Installing assets for Sensio\Bundle\DistributionBundle into web/bundles/sensiodistribution
+
+
