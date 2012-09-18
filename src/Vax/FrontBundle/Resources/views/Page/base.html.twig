@@ -35,28 +35,13 @@
                 <div class="nav-container">
                     <nav>
                         <ul class="nav">
-                            <li>
-                                <a href="{{ path('homepage') }}"> HOME </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('servicios') }}"> SERVICIOS </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('clientes') }}"> NUESTROS CLIENTES </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('ubiquiti') }}"> UBIQUITI </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('ofertas') }}"> OFERTAS </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('faq') }}"> FAQ </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('contacto') }}"> CONTACTO </a>
-                            </li>
-
+                            <li> <a href="{{ path('homepage') }}"> HOME </a> </li>
+                            <li> <a href="{{ path('servicios') }}"> SERVICIOS </a> </li>
+                            <li> <a href="{{ path('clientes') }}"> NUESTROS CLIENTES </a> </li>
+                            <li> <a href="{{ path('ubiquiti') }}"> UBIQUITI </a> </li>
+                            <li> <a href="{{ path('ofertas') }}"> OFERTAS </a> </li>
+                            <li> <a href="{{ path('faq') }}"> FAQ </a> </li>
+                            <li> <a href="{{ path('contacto') }}"> CONTACTO </a> </li>
                         </ul>
                     </nav>
                 </div>
@@ -68,18 +53,14 @@
                 {% if (app.request.get('_route') == 'homepage'
                                     or app.request.get('_route') == 'quienesomos'
                                     or app.request.get('_route') == 'historia')  %}
-                      <div class="sub-nav">
+                    <div class="sub-nav">
                         <nav>
-                          <ul class="sub-nav" style="background-color: green">
-                            <li>
-                              <a href="{{ path('quienesomos') }}"> QUIENES SOMOS </a>
-                            </li>
-                            <li>
-                              <a href="{{ path('historia') }}"> HISTORIA </a>
-                            </li>
-                          </ul>
+                              <ul class="sub-nav" style="background-color: green">
+                                    <li> <a href="{{ path('quienesomos') }}"> QUIENES SOMOS </a> </li>
+                                    <li> <a href="{{ path('historia') }}"> HISTORIA </a> </li>
+                              </ul>
                         </nav>
-                      </div>
+                    </div>
                 {% endif %}
             
                 <!-- SI está en servicios deben aparecer dos submenúes -->
@@ -91,19 +72,10 @@
                       <div class="sub-nav">
                         <nav>
                           <ul class="sub-nav" style="background-color: green">
-                            <li>
-                              <a href="{{ path('motherboard') }}"> MOTHERBOARD </a>
-                            </li>
-                            <li>
-                              <a href="{{ path('notebook') }}"> NOTEBOOK </a>
-                            </li>
-                          <li>
-                              <a href="{{ path('placavideo') }}"> PLACA DE VIDEO </a>
-                            </li>
-                          <li>
-                              <a href="{{ path('seguridad') }}"> SEGURIDAD </a>
-                            </li>
-                          
+                            <li> <a href="{{ path('motherboard') }}"> MOTHERBOARD </a> </li>
+                            <li> <a href="{{ path('notebook') }}"> NOTEBOOK </a> </li>
+                            <li> <a href="{{ path('placavideo') }}"> PLACA DE VIDEO </a> </li>
+                            <li> <a href="{{ path('seguridad') }}"> SEGURIDAD </a> </li>
                           </ul>
                         </nav>
                       </div>
