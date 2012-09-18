@@ -11,6 +11,7 @@
         
         {% block stylesheets %}
             <link href="{{ asset('bundles/vaxfront/css/main.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/vaxfront/css/slider-vertical.css') }}" type="text/css" rel="stylesheet" />
             <link rel="shortcut icon" type="image/icon" href="{{ asset('bundles/vaxfront/images/vax.ico') }}" />
         {% endblock %}
         
@@ -56,7 +57,7 @@
                                     or app.request.get('_route') == 'historia')  %}
                     <div class="sub-nav">
                         <nav>
-                              <ul class="sub-nav" style="background-color: green">
+                              <ul class="sub-nav">
                                     <li> <a href="{{ path('quienesomos') }}"> QUIENES SOMOS </a> </li>
                                     <li> <a href="{{ path('historia') }}"> HISTORIA </a> </li>
                               </ul>
@@ -72,7 +73,7 @@
                                     or app.request.get('_route') == 'motherboard')  %}
                       <div class="sub-nav">
                         <nav>
-                          <ul class="sub-nav" style="background-color: green">
+                          <ul class="sub-nav">
                             <li> <a href="{{ path('motherboard') }}"> MOTHERBOARD </a> </li>
                             <li> <a href="{{ path('notebook') }}"> NOTEBOOK </a> </li>
                             <li> <a href="{{ path('placavideo') }}"> PLACA DE VIDEO </a> </li>
@@ -84,7 +85,7 @@
 
             {% endblock %}
 
-            <div class="body">
+            <div class="content">
                 {% block body %}
                     <div>
                         este es el cuerpo de el archivo base.
@@ -93,10 +94,7 @@
                     <!-- MODULO DE OFERTAS (SLIDER VERTICAL) -->
                     <div class="contenedor-slider">
                         <div class="bloque-slider">
-                            <div class="modulo-slider">
-                                OFERTAS
-                                -------------------------------------------
-                            </div>
+                            <div class="modulo-slider"> </div>
                             <div class="modulo-slider">
                                 Aquí esta la noticia UNO-----------titulo
                                 Sigue por aqui
