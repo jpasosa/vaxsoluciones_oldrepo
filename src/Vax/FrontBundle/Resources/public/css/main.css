@@ -143,3 +143,44 @@ body {
   
 
 }
+
+.contenedor-slider {
+  height: 100px;
+  margin:0;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  width: 400px;
+  background-color: #fbf2f2;
+}
+
+.contenedor-slider .bloque-slider {
+  position: relative;
+}
+
+.contenedor-slider .bloque-slider .modulo-slider {
+    height: 80px;
+    margin: 0 40px 0 0;
+    padding: 13px 10px 5px 0;
+    position: relative;
+}
+
+.contenedor-slider .mover-slider-vertical {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  top: 0;
+}
+
+.contenedor-slider .mover-slider-vertical .subir-slider {
+
+}
+
+.contenedor-slider .mover-slider-vertical .bajar-slider {
+
+}
+
+
+
+
+
