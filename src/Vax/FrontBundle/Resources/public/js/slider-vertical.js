@@ -9,7 +9,7 @@ Sitio: www.xoyaz.com
  
 
 velocidad = 1500;
-tiempoEspera = 10000;
+tiempoEspera = 7000;
 verificar = 1;
 dif = 0;
 timer = 0

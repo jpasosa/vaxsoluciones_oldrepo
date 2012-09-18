@@ -87,41 +87,140 @@
 
             <div class="content">
                 {% block body %}
-                    <div>
-                        este es el cuerpo de el archivo base.
-                    </div>
                     
-                    <!-- MODULO DE OFERTAS (SLIDER VERTICAL) -->
-                    <div class="contenedor-slider">
-                        <div class="bloque-slider">
-                            <div class="modulo-slider"> </div>
-                            <div class="modulo-slider">
-                                Aquí esta la noticia UNO-----------titulo
-                                Sigue por aqui
-                                Y aun continua la noticia UNO
-                                Aqui sigue
-                            </div>
-                            <div class="modulo-slider">
-                                Aquí esta la noticia DOS--------------titulo
-                                Sigue por aqui
-                                Y aun continua la noticia DOS-
-                                Aqui sigue
-                            </div>
-                            <div class="modulo-slider">
-                                Aquí esta la noticia TRES----------titulo
-                                Sigue por aqui
-                                Y aun continua la noticia TRES
-                                Aqui sigue
-                            </div>
-                        </div>
-                        <p class="mover-slider-vertical">
-                            <a class="subir-slider">Subir</a>
-                            <a class="bajar-slider">Bajar</a>
-                        </p>
-
+                    <div class="col-left">
+                        {% block col_left %}
+                            esto esta en la base
+                        {% endblock %}
                     </div>
+
+
+                    <div class="col-right">
+                        <!-- MODULO DE OFERTAS (SLIDER VERTICAL) -->
+                        <div class="contenedor-slider">
+                            <div class="bloque-slider">
+                                <div class="modulo-slider"> </div>
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        MOTHER MSI
+                                    </div>
+                                    <div class="description">
+                                        un mother espectacular
+                                    </div>
+                                    <div class="price">
+                                        $223,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        APPLE
+                                    </div>
+                                    <div class="description">
+                                        la verdadera manzana
+                                    </div>
+                                    <div class="price">
+                                        $12223,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia 2 años
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        MODEM
+                                    </div>
+                                    <div class="description">
+                                        modem vps
+                                    </div>
+                                    <div class="price">
+                                        $123,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        CPU ATHLON
+                                    </div>
+                                    <div class="description">
+                                        cpu dedicaco
+                                    </div>
+                                    <div class="price">
+                                        $1233,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        NOTEBOOK
+                                    </div>
+                                    <div class="description">
+                                        atx 88
+                                    </div>
+                                    <div class="price">
+                                        $2223,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia 1 año
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        PLACA xxxx
+                                    </div>
+                                    <div class="description">
+                                        placa tridimensional
+                                    </div>
+                                    <div class="price">
+                                        $323,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia 1 año
+                                    </div>
+                                </div>
+
+                                <div class="modulo-slider">
+                                    <div class="image"> <img src="" /> </div>
+                                    <div class="title">
+                                        MOTHER MSI
+                                    </div>
+                                    <div class="description">
+                                        un mother espectacular
+                                    </div>
+                                    <div class="price">
+                                        $223,00
+                                    </div>
+                                    <div class="guaranty">
+                                        Garantia
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="mover-slider-vertical">
+                                <a class="subir-slider">Subir</a>
+                                <a class="bajar-slider">Bajar</a>
+                            </p>
+                        </div> <!-- FIN contenedor-slider -->
+                    </div> <!-- FIN col-right -->
                 {% endblock %}                        
-            </div>
+            </div> <!-- FIN content -->
             
             <div class="footer">
                 {% block footer %}
