@@ -13,9 +13,11 @@
 
 .contenedor-slider .bloque-slider .modulo-slider {
     height: 150px;
-    margin: 0 40px 0 0;
+    margin: 0 70px 0 0;
     padding: 13px 10px 5px 0;
     position: relative;
+    border-bottom: 1px dotted;
+    width: 110px;
 }
 
 .contenedor-slider .mover-slider-vertical {
@@ -39,9 +41,31 @@
 }
 
 .contenedor-slider .mover-slider-vertical .subir-slider {
-  background-position: 0px;
+  width: 22px;
+  height: 28px;
+  background:url(/bundles/vaxfront/images/flecha_up.jpg);
+  -moz-background-size:80px 60px; /* Firefox 3.6 */
+  background-repeat:no-repeat;
+  background-position: top left;
+  float: right;
+  margin: 15px 15px 15px 15px;
+}
+
+.contenedor-slider .mover-slider-vertical .subir-slider:hover {
+  background-position: bottom left;
 }
 
 .contenedor-slider .mover-slider-vertical .bajar-slider {
-  background-position: -21px 0;
+  width: 22px;
+  height: 28px;
+  background:url(/bundles/vaxfront/images/flecha_down.jpg);
+  -moz-background-size:80px 60px; /* Firefox 3.6 */
+  background-repeat:no-repeat;
+  background-position: top left;
+  float: right;
+  margin: 195px 15px 15px 15px;
+}
+
+.contenedor-slider .mover-slider-vertical .bajar-slider:hover {
+  background-position: bottom left;
 }
