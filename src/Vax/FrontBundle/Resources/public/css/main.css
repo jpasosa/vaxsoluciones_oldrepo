@@ -107,8 +107,9 @@ body {
 }
 
 .out-container .header {
-  width: 853px;   /*ancho de la foto actual del header*/  
-  height: 117px;
+  /*width: 853px;   /*ancho de la foto actual del header*/  
+  /*height: 117px;*/
+  width: 980px;
   margin: 10px auto 10px auto;
 }
 
@@ -118,7 +119,7 @@ body {
 }
 
 .out-container .header a .banner {
-    width: 853px;
+    /*width: 853px;*/
 }
 
 .out-container .nav-container {
