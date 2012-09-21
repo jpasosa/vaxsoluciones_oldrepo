@@ -6,6 +6,13 @@ namespace Vax\FrontBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 
+// Para el formulario de contacto
+use Vax\FrontBundle\Entity\Contact;
+use Vax\FrontBundle\Form\ContactType;
+
+
+
+
 class PageController extends Controller
 {
     
@@ -90,7 +97,29 @@ class PageController extends Controller
 
     // CONTACTO
     public function contactAction() {
-        return $this->render('VaxFrontBundle:Page:contact.html.twig');
-    }
+        $contact = new Contact();
+        $form = $this->createForm(new ContactType(), $contact);
+
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            $form->bindRequest($request);
+
+            if ($form->isValid()) {
+                // Perform some action, such as sending an email
+                // Redirect - This is important to prevent users re-posting
+                // the form if they refresh the page
+                return $this->redirect($this->generateUrl('contacto'));
+            }
+        }
+
+        return $this->render('VaxFrontBundle:Page:contact.html.twig', array(
+            'form' => $form->createView()
+        ));
+        }
+
+
+
+
+
 
 } // FIN CLASE PageController
