@@ -7,7 +7,7 @@
 {% block col_left %}
     sección CONTACTO
 
-    <form action="{{ path('contacto') }}" method="post" {{ form_enctype(form) }} class="blogger">
+    <form action="{{ path('contacto') }}" method="post" {{ form_enctype(form) }} class="contact-form">
         {{ form_errors(form) }}
 
         {{ form_row(form.name) }}
