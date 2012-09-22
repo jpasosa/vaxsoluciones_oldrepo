@@ -88,116 +88,165 @@ body {
     /*background: url("/bundles/webalibresecciones/images/base/fondo_gris.jpg") repeat scroll 0 0 #fbd19e;*/
     color: #000000;
     background-color: #FFFFFF;
-    font-family: sans-serif, Times New Roman;
+    font-family: arial, Times New Roman;
     /*font-size: 13px;*/
-    margin: 20px 0 0 0;
+    /*margin: 20px 0 0 0;*/
     padding: 0;
     display: block;
     
 }
 
 .out-container {
-  width: 1000px;
+  /*width: 1000px;*/
   margin: 0 auto 100px auto;
   /*padding: 5px 0;*/
-  border: 1px solid #dbd7de;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background-color: #dbd7de;
+  /*border: 1px solid #dbd7de;*/
+  /*-moz-border-radius: 15px;*/
+  /*border-radius: 15px;*/
+  /*background-color: #dbd7de;*/
 }
 
 .out-container .header {
-  /*width: 853px;   /*ancho de la foto actual del header*/  
-  /*height: 117px;*/
-  width: 980px;
-  margin: 10px auto 10px auto;
-}
-
-.out-container .header a {
-  
-
-}
-
-.out-container .header a .banner {
-    /*width: 853px;*/
-}
-
-.out-container .nav-container {
-    width: 100%;
-
-}
-
-.out-container .nav-container nav {
-    float: left;
-    margin: 0 auto 0 100px;
-    width: 100%;
-}
-
-.out-container .nav-container nav ul.nav {
-    float: left;
-    width: 100%;
-    margin: 10px auto 10px auto;
-}
-
-.out-container .nav-container nav ul.nav li {
+  background: url("/bundles/vaxfront/images/base/pattern-header.jpg") repeat-x scroll 0 0 #FFFFFF;
+  /*height: 400px;*/
   float: left;
-  margin: 10px 20px 10px 20px;
+  width: 100%;
+}
+
+.out-container .header .inner-header {
+  width: 960px;
+  margin: 0 auto 10px auto;
+  /*padding: 5px 0;*/
+  /*border: 1px solid #dbd7de;*/
+  /*-moz-border-radius: 15px;*/
+  /*border-radius: 15px;*/
+  /*background-color: #dbd7de;*/
 
 }
 
-.out-container .nav-container nav ul.nav li a {
-  
-
-}
-
-
-
-
-
-
-.out-container .sub-nav {
-  
-
-}
-
-.out-container .sub-nav nav{
-  float: left;
-    margin: 0 auto 0 100px;
-    width: 100%;
-
-}
-
-.out-container .sub-nav nav ul.sub-nav{
-    width: 100%;
-    float: left;
-}
-
-.out-container .sub-nav nav ul.sub-nav li {
-  font-size: 12px;
-  margin: 0 20px 10px 20px;
+.out-container .header .inner-header .logo {
+  width: 204px;  /*ancho del logo*/
   float: left;
 
 }
 
-.out-container .sub-nav nav ul.sub-nav li a {
+.out-container .header .inner-header .logo a{
+  background: url("/bundles/vaxfront/images/base/logo.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 84px;
+  /*text-indent: -9999px;*/
+  width: 204px;
+  margin: 20px 0 0 0;
+
+}
+
+
+
+
+
+/*MENUES*/
+
+.out-container .header .inner-header .nav-container {
+    /*width: 100%;*/
+    float: right;
+    margin: 90px 10px 0 0;
+
+}
+
+.out-container .header .inner-header .nav-container nav {
+    float: left;
+    /*margin: 0 auto 0 100px;*/
+    width: 100%;
+    font-family: 'Quantico', arial;
+    font-size: 16px;
+    color: #aeaeae;
+}
+
+.out-container .header .inner-header .nav-container nav ul.nav {
+    float: left;
+    width: 100%;
+    /*margin: 10px auto 10px auto;*/
+}
+
+.out-container .header .inner-header .nav-container nav ul.nav li {
+  float: left;
+  margin: 0 13px 0 13px;
+
+}
+
+.out-container .header .inner-header .nav-container nav ul.nav li a {
   
 
 }
 
-.out-container .sub-nav nav ul.sub-nav li a:hover {
+.out-container .header .inner-header .nav-container nav ul.nav li a:hover {
+    color: #000000;
+
+}
+
+
+
+
+/*SUBMENUES*/
+
+.out-container .header .inner-header .sub-nav {
+    float: right;
+
+}
+
+.out-container .header .inner-header .sub-nav nav{
+    float: left;
+    /*margin: 0 auto 0 100px;*/
+    width: 100%;
+    font-family: 'Quantico', arial;
+    font-size: 14px;
+    color: #aeaeae;
+
+}
+
+.out-container .header .inner-header .sub-nav nav ul.sub-nav{
+    float: left;
+    width: 100%;
+    /*margin: 10px auto 10px auto;*/
+}
+
+.out-container .header .inner-header .sub-nav nav ul.sub-nav li {
+  float: left;
+  margin: 0 13px 0 13px;
+
+}
+
+.out-container .header .inner-header .sub-nav nav ul.sub-nav li a {
   
 
 }
+
+.out-container .header .inner-header .sub-nav nav ul.sub-nav li a:hover {
+  color: #000000;
+
+}
+
+
+/*BANNERS*/
+
+.out-container .header .inner-header .banners {
+  float: left;
+  width: 940px;
+  margin: 30px auto 10px auto;
+
+}
+
+
+
+/*CONTENT*/
 
 .out-container .content {
-  float:left;
-  width: 100%;
-
+  width: 960px;
+  margin: 0 auto 0 auto;
 }
 
 .out-container .content .col-left {
   float: left;
-
 }
 
 .out-container .content .col-right {
@@ -208,6 +257,9 @@ body {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+
+
+/*FOOTER*/
 
 .out-container .footer {
   width: 100%;

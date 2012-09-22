@@ -9,16 +9,11 @@ homepage:
     pattern:  /
     defaults: { _controller: VaxFrontBundle:Page:homepage }
 
-# HOME - QUIENES SOMOS (submenú)
-quienesomos:
-    pattern:  /quienes-somos
+
+# NOSOTROS
+nosotros:
+    pattern:  /nosotros
     defaults: { _controller: VaxFrontBundle:Page:aboutus }
-
-# HOME - HISTORIA (submenú)
-historia:
-    pattern:  /historia
-    defaults: { _controller: VaxFrontBundle:Page:history }
-
 
 
 
@@ -47,6 +42,10 @@ seguridad:
     pattern:  /servicios/seguridad-y-comunicaciones
     defaults: { _controller: VaxFrontBundle:Page:security }
 
+# SERVICIOS - FAQ
+faq:
+    pattern:  /servicios/faq
+    defaults: { _controller: VaxFrontBundle:Page:faq }
 
 
 # NUESTROS CLIENTES
@@ -73,10 +72,7 @@ ofertas:
 
 
 
-# FAQ
-faq:
-    pattern:  /faq
-    defaults: { _controller: VaxFrontBundle:Page:faq }
+
 
 
 
