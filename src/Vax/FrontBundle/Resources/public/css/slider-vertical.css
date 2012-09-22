@@ -16,8 +16,8 @@
     margin: 0 70px 0 0;
     padding: 13px 10px 5px 0;
     position: relative;
-    border-bottom: 1px dotted;
-    width: 110px;
+    /*border-bottom: 1px dotted;*/
+    /*width: 110px;*/
 }
 
 .contenedor-slider .mover-slider-vertical {
