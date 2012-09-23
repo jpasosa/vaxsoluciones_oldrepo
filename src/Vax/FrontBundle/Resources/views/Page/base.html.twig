@@ -119,8 +119,48 @@
             
             <div class="footer">
                 {% block footer %}
-                    aquí va el footer
+                    <div class="inner-footer">
+                        <div class="images">
+                            {% for i in range(1, 48) %}
+                                <img src="{{ asset('bundles/vaxfront/images/footer/logo02.png') }}" alt="logo"
+                                                width="50" height="30" />
+                            {% endfor %}
+                        </div>
+                        <div class="line">
+                            <img src="{{ asset('bundles/vaxfront/images/base/linea-footer.jpg') }}" alt="logo"
+                                                width="940" height="2" />
+                        </div>
+                        <div class="text">
+                            Copyright 2012 - Vaxsoluciones - Todos los derechos reservados - Tel 4585.4041 - info@vaxsoluciones.com.ar
+                        </div>
+                        <div class="social-red">
+                            <div class="messenger"> </div>
+                            <div class="facebook"> </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    
                 {% endblock %}
             </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

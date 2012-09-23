@@ -97,13 +97,7 @@ body {
 }
 
 .out-container {
-  /*width: 1000px;*/
-  margin: 0 auto 100px auto;
-  /*padding: 5px 0;*/
-  /*border: 1px solid #dbd7de;*/
-  /*-moz-border-radius: 15px;*/
-  /*border-radius: 15px;*/
-  /*background-color: #dbd7de;*/
+  margin: 0 auto 0 auto;
 }
 
 .out-container .header {
@@ -276,13 +270,20 @@ body {
 
 .out-container .content .home-col-left ul.services {
   float: left;
-  list-style-type: disc;
+  list-style-type: none;
   margin: 20px 0 20px 50px;
 }
 
 .out-container .content .home-col-left ul.services li {
   color: #aeaeae;
+  margin: 5px 0 5px 0;
 
+}
+
+.out-container .content .home-col-left ul.services li span {
+  color: #9a041f;
+  font-weight: bold;
+  margin: 0 10px 0 0;
 }
 
 .out-container .content .home-col-left .conocer-mas {
@@ -367,15 +368,41 @@ body {
 /*FOOTER*/
 
 .out-container .footer {
-  width: 100%;
-  height: 200px;
+  background: url("/bundles/vaxfront/images/base/pattern-footer.jpg") repeat-x scroll 0 0 #FFFFFF;
   float: left;
-  background-color: #f8f5f5;
+  width: 100%;
+  height: 256px;
 }
 
+.out-container .footer .inner-footer {
+  width: 960px;
+  margin: 0 auto 10px auto;
+}
 
+.out-container .footer .inner-footer .images {
+  margin: 25px auto 0 auto;
+}
 
+.out-container .footer .inner-footer .images img {
+  margin: 5px 12px 5px 12px;
+}
 
+.out-container .footer .inner-footer .line{
 
+}
 
+.out-container .footer .inner-footer .text {
 
+}
+
+.out-container .footer .inner-footer .social-red {
+
+}
+
+.out-container .footer .inner-footer .social-red .messenger {
+
+}
+
+.out-container .footer .inner-footer .social-red .facebook {
+
+}
