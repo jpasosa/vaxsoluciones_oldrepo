@@ -15,6 +15,10 @@ nosotros:
     pattern:  /nosotros
     defaults: { _controller: VaxFrontBundle:Page:aboutus }
 
+# HISTORIA
+historia:
+    pattern:  /nuestra-historia
+    defaults: { _controller: VaxFrontBundle:Page:history }
 
 
 # SERVICIOS
