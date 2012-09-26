@@ -285,7 +285,7 @@ body {
 /*en la HOME el content se divide en dos solamente. debe ser más chico el width*/
 .out-container .content .home-col-left {
   float: left;
-  width: 480px;
+  width: 470px;
   margin: auto auto 180px auto;
 }
 
@@ -369,7 +369,12 @@ body {
 
 .out-container .content .home-col-right {
   float: right;
-  width: 480px;
+  background: url("/bundles/vaxfront/images/ofertas/box.png") no-repeat scroll 0 0 #FFFFFF;
+  margin: 20px auto auto auto;
+  width: 490px;
+  height: 333px;
+
+
 }
 
 .out-container .content .col-right {
@@ -379,24 +384,24 @@ body {
   background-color: #fff9f9;
   -moz-border-radius: 10px;
   border-radius: 10px;
+
 }
 
-.out-container .content .home-col-right .title,
- .out-container .content .col-right .title{
-  font-family: 'Quantico', arial;
-  font-size: 22px;
-  color: #000000;
-  margin: 20px auto 20px auto;
-}
 
 .out-container .content .home-col-right .out-container-slider,
  .out-container .content .col-right .out-container-slider{
-  -moz-border-radius: 20px;
-  border-radius: 20px;
   float: right;
   width: 100%;
-  background-color: #e5e5e5;
-  height: 350px;
+}
+
+.out-container .content .home-col-right .out-container-slider .title,
+.out-container .content .col-right .out-container-slider .title {
+  color: #5C5959;
+  font-family: 'Quantico', Arial;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px auto 10px 20px;
+  
 }
 
 
@@ -522,8 +527,16 @@ body {
   margin: 10px auto 0 auto;
 }
 
-.out-container .footer .inner-footer .images img {
-  margin: 5px 12px 5px 12px;
+.out-container .footer .inner-footer .images a  {
+  text-decoration: none;
+}
+
+.out-container .footer .inner-footer .images a:hover  {
+
+}
+
+.out-container .footer .inner-footer .images a img {
+  /*margin: 5px 12px 5px 12px;*/
 }
 
 .out-container .footer .inner-footer .line{
