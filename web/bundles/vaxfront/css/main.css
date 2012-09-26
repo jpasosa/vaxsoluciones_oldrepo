@@ -286,6 +286,7 @@ body {
 .out-container .content .home-col-left {
   float: left;
   width: 480px;
+  margin: auto auto 180px auto;
 }
 
 .out-container .content .home-col-left .title {

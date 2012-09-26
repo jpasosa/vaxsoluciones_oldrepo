@@ -121,10 +121,17 @@
                 {% block footer %}
                     <div class="inner-footer">
                         <div class="images">
-                            {% for i in range(1, 48) %}
-                                <img src="{{ asset('bundles/vaxfront/images/footer/logo02.png') }}" alt="logo"
-                                                width="50" height="30" />
+                            {% for i in range(1, 18) %}
+                                <img src='/bundles/vaxfront/images/footer/logo{{ i }}.png' alt="logo"
+                                                width="100" height="40" />
                             {% endfor %}
+                            {% for i in range(1, 2) %}
+                                <img src='/bundles/vaxfront/images/footer/logo{{ i }}.png' alt="logo"
+                                                width="100" height="40" />
+                            {% endfor %}
+                            <img src='/bundles/vaxfront/images/footer/logo1.png' alt="logo"
+                                                width="100" height="40" />
+
                         </div>
                         <div class="line">
                             <img src="{{ asset('bundles/vaxfront/images/base/linea-footer.jpg') }}" alt="logo"
