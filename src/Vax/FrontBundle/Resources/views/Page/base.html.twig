@@ -29,9 +29,6 @@
     </head>
     
     <body>
-        
-        
-        
         <div class="out-container">        
             <div class="header">
                 {% block header %}
@@ -112,68 +109,11 @@
                     {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
                     </div> <!-- Cierro el col-right -->
 
-
-
                 {% endblock %}                        
             </div>
             
-            <div class="footer">
-                {% block footer %}
-                    <div class="inner-footer">
-                        <div class="images">
-                            {% for i in range(1, 18) %}
-                                <img src='/bundles/vaxfront/images/footer/logo{{ i }}.png' alt="logo"
-                                                width="100" height="40" />
-                            {% endfor %}
-                            {% for i in range(1, 2) %}
-                                <img src='/bundles/vaxfront/images/footer/logo{{ i }}.png' alt="logo"
-                                                width="100" height="40" />
-                            {% endfor %}
-                            <img src='/bundles/vaxfront/images/footer/logo1.png' alt="logo"
-                                                width="100" height="40" />
-
-                        </div>
-                        <div class="line">
-                            <img src="{{ asset('bundles/vaxfront/images/base/linea-footer.jpg') }}" alt="logo"
-                                                width="940" height="2" />
-                        </div>
-                        <div class="text">
-                            Copyright © 2012 - Vaxsoluciones ® - Todos los derechos reservados - Tel 4585.4041 - info@vaxsoluciones.com.ar
-                        </div>
-                        <div class="social-red">
-                            <div class="messenger">
-                                <img src="{{ asset('bundles/vaxfront/images/footer/msn.png') }}" alt="msn"
-                                                width="40" height="40" title="agreganos vivilti@hotmail.com"/>
-                            </div>
-                            <div class="facebook">
-                                <img src="{{ asset('bundles/vaxfront/images/footer/facebook.png') }}" alt="facebook"
-                                                width="40" height="40" />
-                            </div>
-                        </div>
-                    </div>
-    
-    
-    
-    
-    
-                    
-                {% endblock %}
-            </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- FOOTER -->
+            {% include 'VaxFrontBundle:Page:footer.html.twig' %}
+        </div> <!-- cierro out-container -->
     </body>
 </html>
