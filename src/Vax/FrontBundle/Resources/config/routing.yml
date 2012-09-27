@@ -23,8 +23,8 @@ historia:
 
 # SERVICIOS
 servicios:
-    pattern:  /servicios
-    defaults: { _controller: VaxFrontBundle:Page:service }
+    pattern:  /servicios/motherboard
+    defaults: { _controller: VaxFrontBundle:Page:mother }
 
 # SERVICIOS - MOTHERBOARD (submenú)
 motherboard:

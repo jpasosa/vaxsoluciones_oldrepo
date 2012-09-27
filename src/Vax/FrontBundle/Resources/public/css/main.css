@@ -210,6 +210,7 @@ body {
 
 .out-container .header .inner-header .sub-nav {
     float: right;
+    height: 1px; /*para que no baje el banner cuando muestra el submenu*/
 
 }
 
@@ -467,7 +468,8 @@ body {
   font-size: 16px;
   font-weight: bold;
   border-bottom: #5c5959 1px solid ;
-  margin: 20px auto 20px auto;
+  margin: 20px 0 10px 0;
+  width: 520px;
 }
 
 .out-container .content .col-left .content-common ul.list {

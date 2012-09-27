@@ -2,7 +2,12 @@
  .out-container .content .col-right .out-container-slider{
   float: right;
   width: 100%;
+
 }
+.out-container .content .col-right .out-container-slider {
+  margin: auto 20px auto auto;
+}
+
 
 .out-container-slider .title,
 .out-container-slider .title {

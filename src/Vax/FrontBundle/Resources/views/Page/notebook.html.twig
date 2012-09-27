@@ -5,7 +5,23 @@
 {% endblock %}
 
 {% block col_left %}
-    sección NOTEBOOK
+    <div class="content-common">
+        <h2 class="section-title"> NOTEBOOK</h2>
+        <div class="box">
+            <div class="txt-left">
+                <p> Contamos con servicio técnico especializado en nuestro staff, egresados de la UTN. Contamos con tecnología de avanzada que nos permiten innovar en métodos de reparación mas efectivos y precisos. </p>
+                <p> Todas las notebook que contengan el GPU NVidia 6100/6150 que cuentan con aceleradora grafica GForce suelen tener distintas fallas debido a las altas temperaturas con las que trabajan. </p>
+            </div>
+            <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/nosotros/chip.jpg') }}" alt="chip" width="160" height="150" />
+        </div>
+        <div class="subtitle"> Detalle de Fallas: </div>
+        <ul class="list">
+            <li> <span> • </span> No funciona la placa de conexion inalambrica a la red (WIFI). </li>
+            <li> <span> • </span> Notebook con pantalla azul. </li>
+            <li> <span> • </span> Se reinicia constantemente. </li>
+            <li> <span> • </span> Enciende pero no da imagen, estos son motivos para realizar un reballing. </li>
+        </ul>
+    </div>
 {% endblock %}
 
 
