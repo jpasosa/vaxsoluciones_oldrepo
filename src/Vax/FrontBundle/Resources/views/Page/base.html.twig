@@ -96,23 +96,32 @@
             <div class="content">
                 {% block body %}
                     
-                    {% if (app.request.get('_route') == 'homepage')  %} <div class="home-col-left">
-                    {% else  %} <div class="col-left">
+                    {% if (app.request.get('_route') == 'homepage')  %}
+                            <div class="home-col-left">
+                    {% else  %}
+                            <div class="col-left">
                     {% endif  %}
+                    
                     {% block col_left %}  <!-- COL-LEFT --> <!-- pongo blocke porq son todos distintos -->
                         esto esta en la base
                     {% endblock %}
-                    </div> <!-- Cierro el col-left -->
+                            </div> <!-- Cierro el col-left -->
 
 
-                    {% if (app.request.get('_route') == 'homepage')  %} <div class="home-col-right">
-                    {% else  %} <div class="col-right">
+                    {% if (app.request.get('_route') == 'homepage')  %}
+                            <div class="home-col-right">
+                    {% else  %}
+                            <div class="col-right">
                     {% endif  %}
-                    {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
-                    </div> <!-- Cierro el col-right -->
+                                    {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
+                            </div> <!-- Cierro el col-right -->
 
-                {% endblock %}                        
+                {% endblock %}
+            
             </div>
+            
+            </div>  <!-- TODO:investigar este div que tengo que poner para cerrar el content, por que sucede -->
+
             
             <!-- FOOTER -->
             {% include 'VaxFrontBundle:Page:footer.html.twig' %}

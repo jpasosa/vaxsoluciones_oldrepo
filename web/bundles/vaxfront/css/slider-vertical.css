@@ -1,8 +1,31 @@
+.out-container .content .home-col-right .out-container-slider,
+ .out-container .content .col-right .out-container-slider{
+  float: right;
+  width: 100%;
+}
 
-.contenedor-slider {
+.out-container-slider .title,
+.out-container-slider .title {
+  color: #5C5959;
+  font-family: 'Quantico', Arial;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px auto 10px 20px;
+  
+}
+
+
+
+
+
+
+
+
+
+.home-col-right .contenedor-slider {
   background-color: #FFFFFF;
   border: 2px solid #dbdbdb;
-  height: 230px;
+  height: 240px;
   margin: 10px 0 0 20px;
   overflow: hidden;
   position: relative;
@@ -10,17 +33,87 @@
   /*float: right;*/
 }
 
+.col-right .contenedor-slider { /*aqui no esta en la HOME, es mas chico*/
+  background-color: #FFFFFF;
+  border: 2px solid #dbdbdb;
+  height: 240px;
+  margin: 10px 0 0 20px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  /*float: right;*/
+}
+
+
+
 .contenedor-slider .bloque-slider {
   position: relative;
 }
 
-.contenedor-slider .bloque-slider .modulo-slider {
-    height: 150px;
-    margin: 0 70px 0 0;
-    padding: 13px 10px 5px 0;
+.contenedor-slider .bloque-slider ul li .modulo-slider {
+    height: 85px;
+    /*margin: 0 70px 0 0;*/
+    /*padding: 13px 10px 5px 0;*/
     position: relative;
-    /*border-bottom: 1px dotted;*/
     /*width: 110px;*/
+}
+
+.col-right .contenedor-slider .bloque-slider ul li .modulo-slider .left,
+.home-col-right .contenedor-slider .bloque-slider ul li .modulo-slider .left {
+    float: left;
+    height: 55px;
+    width: 100px;
+    border-bottom: 2px dotted #dbdbdb;
+    margin: 5px 0 0 0;
+    padding: 0 0 20px 0;
+}
+
+.col-right .contenedor-slider .bloque-slider ul li .modulo-slider .left { /*en todas las secciones, es mas chico*/
+    width: 80px;
+}
+
+.contenedor-slider .bloque-slider ul li .modulo-slider .left a {
+  text-decoration: none;
+}
+
+.contenedor-slider .bloque-slider ul li .modulo-slider .left a img {
+  text-decoration: none;
+  border: 0;
+}
+
+.col-right .contenedor-slider .bloque-slider ul li .modulo-slider .right,
+.home-col-right .contenedor-slider .bloque-slider ul li .modulo-slider .right {
+  width: 290px;
+  float: left;
+  border-bottom: 2px dotted #dbdbdb;
+  height: 55px;
+  margin: 5px 0 0 0;
+  padding: 0 0 20px 0;
+}
+
+.col-right .contenedor-slider .bloque-slider ul li .modulo-slider .right { /*si no es la HOME es mas chico el div right*/
+  width: 180px;
+}
+
+.contenedor-slider .bloque-slider ul li .modulo-slider .right .slide-title {
+  color: #5C5959;
+  font-size: 16px;
+  float:left;
+  width: 100%;
+}
+
+.contenedor-slider .bloque-slider ul li .modulo-slider .right .description {
+  color: #5C5959;
+  font-size: 14px;
+  float:left;
+  width: 100%;
+}
+
+.contenedor-slider .bloque-slider ul li .modulo-slider .right .price {
+  color: #9A041F;
+  font-family: 'Quantico', arial;
+  float:left;
+  width: 100%;
 }
 
 .contenedor-slider .mover-slider-vertical {
