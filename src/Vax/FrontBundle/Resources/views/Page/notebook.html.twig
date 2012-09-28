@@ -12,7 +12,13 @@
                 <p> Contamos con servicio técnico especializado en nuestro staff, egresados de la UTN. Contamos con tecnología de avanzada que nos permiten innovar en métodos de reparación mas efectivos y precisos. </p>
                 <p> Todas las notebook que contengan el GPU NVidia 6100/6150 que cuentan con aceleradora grafica GForce suelen tener distintas fallas debido a las altas temperaturas con las que trabajan. </p>
             </div>
-            <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/nosotros/chip.jpg') }}" alt="chip" width="160" height="150" />
+            <div id="slideshow">
+                <img class="image-rigth active" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-01.jpg') }}" alt="chip" width="160" height="150" />
+                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-02.jpg') }}" alt="chip" width="160" height="150" />
+                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-03.jpg') }}" alt="chip" width="160" height="150" />
+                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-04.jpg') }}" alt="chip" width="160" height="150" />
+                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-05.jpg') }}" alt="chip" width="160" height="150" />
+            </div>
         </div>
         <div class="subtitle"> Detalle de Fallas: </div>
         <ul class="list">
@@ -21,6 +27,22 @@
             <li> <span> • </span> Se reinicia constantemente. </li>
             <li> <span> • </span> Enciende pero no da imagen, estos son motivos para realizar un reballing. </li>
         </ul>
+        <div class="subtitle"> Que es reballing? </div>
+        <div class="simple-text">
+            <p>Este método es utilizado para resoldar o cambiar el chipset y GPU de los motherboards de notebooks. Estos mismos vienen soldados de fabrica con estaño sin plomo en esferas, que por normativa ecológica no pueden contenerlo, que a su vez forman puntos de soldadura en cada isla del chipset las cuales hacen contacto al soldarse con el motherboard. </p>
+            <p>Nosotros reemplazamos estas esferas por esferas de estaño con plomo, que hacen la soldadura más resistente al calor quedando mejor que de fabrica y con 6 meses de garantía sobre la reparación.</p>
+        </div>
+        <div class="subtitle"> Que marcas suelen tener estas fallas?  </div>
+        <div class="simple-text">
+            <p>Todos los modelos dv de HP, todos los modelos F de Compaq, Acer One, Asus Eepc, LG, Acer, Bangho, Toshiba.. </p>
+            <p>Vale Aclarar, que hay casos en donde los intentos de reparación anteriores fueron fallidos, debido a una mala aplicación de reflow mediante aire caliente, donde es muy probable que hayan SOBRECALENTADO el GPU o CPU, como también los RAM Bricks o el southbridge, y este ha quedado dañado y necesita ser reemplazado.</p>
+            <p>En muchos casos ha ocurrido que usuarios que no cuentan con experiencia o con las herramientas adecuadas, han incurrido en intentar reparar los GPU con métodos caseros como por ej. Poner una moneda en el chipset y utilizar una pistola de aire caliente o SMD, lo cual genera q se sobrecaliente el GPU y se arriesgue a que se rompan los impresos debajo del mismo, lo cual puede producir la rotura definitiva del mother.  </p>
+            <p>Este procedimiento dura muy poco y no es recomendable ya que las esferas de estaño al sobrecalentarse pueden poner en corto el chipset y así perder aun mas dinero para el usuario. </p>
+        </div>
+
+
+
+
     </div>
 {% endblock %}
 
