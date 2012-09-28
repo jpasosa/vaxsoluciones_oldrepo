@@ -41,6 +41,12 @@ class PageController extends Controller
         return $this->render('VaxFrontBundle:Page:service.html.twig');
     }
 
+    // SERVICIOS -- GARANTIA
+    public function warrantyAction() {
+        return $this->render('VaxFrontBundle:Page:warranty.html.twig');
+    }
+
+
     // SERVICIOS -- MOTHERBOARD
     public function motherAction() {
         return $this->render('VaxFrontBundle:Page:mother.html.twig');

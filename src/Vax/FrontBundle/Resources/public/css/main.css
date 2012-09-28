@@ -505,6 +505,10 @@ body {
   width: 520px;
 }
 
+.out-container .content .col-left .content-common .subtitle.notborder {
+  border: none;
+}
+
 .out-container .content .col-left .content-common ul.list {
   color: #5c5959;
   font-size: 12px;
@@ -534,6 +538,69 @@ body {
 .out-container .content .col-left .content-common .simple-text p {
   margin: 10px auto 10px auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NUESTOS CLIENTES */
+
+.client-box {
+  background-color: white;
+  border: 1px solid #DBDBDB;
+  /*height: 240px;*/
+  margin: 30px 10px 30px 10px;
+  width: 160px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  height: 90px;
+}
+
+.client-box:hover {
+
+}
+
+.client-box a {
+
+
+}
+
+.client-box a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+
+
+
+
+
 
 
 
