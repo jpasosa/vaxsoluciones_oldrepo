@@ -49,7 +49,10 @@ class PageController extends Controller
 
     // SERVICIOS -- MOTHERBOARD
     public function motherAction() {
-        return $this->render('VaxFrontBundle:Page:mother.html.twig');
+        $img_files = scandir('bundles/vaxfront/images/servicios/mothers');
+        unset($img_files[0]);
+        unset($img_files[1]);
+        return $this->render('VaxFrontBundle:Page:mother.html.twig', array('images' => $img_files));
     }
 
     // SERVICIOS -- NOTEBOOK

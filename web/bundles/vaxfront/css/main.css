@@ -569,7 +569,7 @@ body {
 /* NUESTOS CLIENTES */
 
 .client-box {
-  background-color: white;
+  background-color: #FFFFFF;
   border: 1px solid #DBDBDB;
   /*height: 240px;*/
   margin: 30px 10px 30px 10px;
@@ -589,11 +589,17 @@ body {
 
 }
 
+
+
 .client-box a img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+.client-box a .short-margin {
+  margin-top: 15px;
 }
 
 
