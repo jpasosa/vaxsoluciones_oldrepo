@@ -48,7 +48,7 @@
                         
                         {% block menu %}    <!-- MENU -->
                             <div class="nav-container">
-                                <nav>
+                                <div>
                                     <ul class="nav">
                                         <li> <a href="{{ path('homepage') }}"> Home </a> </li>
                                         <li> <a href="{{ path('nosotros') }}"> Nosotros </a> </li>
@@ -58,7 +58,7 @@
                                         <li> <a href="{{ path('ofertas') }}"> Ofertas </a> </li>
                                         <li> <a href="{{ path('contacto') }}"> Contacto </a> </li>
                                     </ul>
-                                </nav>
+                                </div>
                             </div>
                         {% endblock %}
                         
@@ -67,12 +67,12 @@
                             {% if (app.request.get('_route') == 'nosotros'
                                                 or app.request.get('_route') == 'historia')  %}
                                   <div class="sub-nav">
-                                    <nav>
+                                    <div>
                                       <ul class="sub-nav">
                                         <li> <a href="{{ path('nosotros') }}"> Quienes Somos </a> </li>
                                         <li> <a href="{{ path('historia') }}"> Historia </a> </li>
                                       </ul>
-                                    </nav>
+                                    </div>
                                   </div>
                             {% endif %}
 
@@ -90,7 +90,7 @@
                                                 or app.request.get('_route') == 'motherboard'
                                                 or app.request.get('_route') == 'faq')  %}
                                   <div class="sub-nav">
-                                    <nav>
+                                    <div>
                                       <ul class="sub-nav">
                                         <li> <a href="{{ path('garantia') }}"> Garantía </a> </li>
                                         <li> <a href="{{ path('motherboard') }}"> Motherboard </a> </li>
@@ -99,7 +99,7 @@
                                         <li> <a href="{{ path('seguridad') }}"> Seguridad </a> </li>
                                         <li> <a href="{{ path('faq') }}"> Faq (Preg. Frecuentes) </a> </li>
                                       </ul>
-                                    </nav>
+                                    </div>
                                   </div>
                             {% endif %}
 
@@ -126,40 +126,39 @@
                 {% block body %}
                     
                     {% if (app.request.get('_route') == 'contacto')  %} <!-- sección contacto -->
-                        <div class="contact">
-                            {% block contacto %}
-                            {% endblock %}
-                        </div>
+                            <div class="contact">
+                                {% block contacto %}
+                                {% endblock %}
+                            </div>
                     {% else %}                    
-                                    {% if (app.request.get('_route') == 'homepage')  %}
-                                            <div class="home-col-left">
-                                    {% elseif (app.request.get('_route') != 'contacto')  %}
-                                            <div class="col-left">
-                                    {% endif  %}
+                            {% if (app.request.get('_route') == 'homepage')  %}
+                                <div class="home-col-left">
+                            {% else  %}
+                                <div class="col-left">
+                            {% endif  %}
+                            
+                            {% block col_left %}
+                                esto esta en la base
+                            {% endblock %}
+                            
+                                </div>
+
+
+                            {% if (app.request.get('_route') == 'homepage')  %}
+                                    <div class="home-col-right">
+                            {% else  %}
+                                    <div class="col-right">
+                            {% endif  %}
                                     
-                                    {% block col_left %}  <!-- COL-LEFT --> <!-- pongo blocke porq son todos distintos -->
-                                        esto esta en la base
-                                    {% endblock %}
-                                            </div> <!-- Cierro el col-left -->
-
-
-                                    {% if (app.request.get('_route') == 'homepage')  %}
-                                            <div class="home-col-right">
-                                    {% elseif (app.request.get('_route') != 'contacto')  %}
-                                            <div class="col-right">
-                                    {% endif  %}
-                                        {% if (app.request.get('_route') != 'contacto')  %}
-                                            {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
-                                        {% endif %}
-                                            </div> <!-- Cierro el col-right -->
+                            {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
+                                    </div>
                     {% endif %}
                     
 
                 {% endblock %}
-            
             </div>
+
             
-            </div>  <!-- TODO:investigar este div que tengo que poner para cerrar el content, por que sucede -->
 
             
             <!-- FOOTER -->

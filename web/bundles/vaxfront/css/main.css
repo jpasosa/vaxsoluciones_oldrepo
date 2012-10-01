@@ -164,7 +164,7 @@ body {
 
 }
 
-.out-container .header .inner-header .nav-container nav {
+.out-container .header .inner-header .nav-container div {
     /*float: left;*/
     /*margin: 0 auto 0 100px;*/
     width: 100%;
@@ -173,24 +173,24 @@ body {
     color: #aeaeae;
 }
 
-.out-container .header .inner-header .nav-container nav ul.nav {
+.out-container .header .inner-header .nav-container div ul.nav {
     /* float: left; */
     width: 100%;
     /*margin: 10px auto 10px auto;*/
 }
 
-.out-container .header .inner-header .nav-container nav ul.nav li {
+.out-container .header .inner-header .nav-container div ul.nav li {
   float: left;
   margin: 0 13px 0 13px;
 
 }
 
-.out-container .header .inner-header .nav-container nav ul.nav li a {
+.out-container .header .inner-header .nav-container div ul.nav li a {
   
 
 }
 
-.out-container .header .inner-header .nav-container nav ul.nav li a:hover {
+.out-container .header .inner-header .nav-container div ul.nav li a:hover {
     color: #000000;
 
 }
@@ -214,7 +214,7 @@ body {
 
 }
 
-.out-container .header .inner-header .sub-nav nav{
+.out-container .header .inner-header .sub-nav div {
     float: left;
     /*margin: 0 auto 0 100px;*/
     width: 100%;
@@ -224,24 +224,24 @@ body {
 
 }
 
-.out-container .header .inner-header .sub-nav nav ul.sub-nav{
+.out-container .header .inner-header .sub-nav div ul.sub-nav{
     float: left;
     width: 100%;
     /*margin: 10px auto 10px auto;*/
 }
 
-.out-container .header .inner-header .sub-nav nav ul.sub-nav li {
+.out-container .header .inner-header .sub-nav div ul.sub-nav li {
   float: left;
   margin: 0 13px 0 13px;
 
 }
 
-.out-container .header .inner-header .sub-nav nav ul.sub-nav li a {
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a {
   
 
 }
 
-.out-container .header .inner-header .sub-nav nav ul.sub-nav li a:hover {
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a:hover {
   color: #000000;
 
 }
