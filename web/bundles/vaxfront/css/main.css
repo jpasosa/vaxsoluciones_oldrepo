@@ -616,6 +616,185 @@ body {
 
 
 
+/*CONTACTO*/
+
+.contact {
+  float: left;
+  margin: 30px auto 30px auto;
+
+}
+
+.contact .left {
+    float: left;
+    width: 270px;
+  
+}
+
+.contact .left .title {
+    font-family: 'Quantico', arial;
+    color: #9A041F;
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+}
+
+.contact .left .description {
+    color: #AEAEAE;
+    margin: 20px auto 20px auto;
+  
+}
+
+.contact .left .box-subtitles {
+      font-family: 'Quantico', arial;
+
+  
+}
+
+.contact .left .box-subtitles img {
+  
+  
+}
+
+.contact .left .box-subtitles .title {
+    color: #9A041F;
+    font-size: 14px;
+    margin: 20px auto 0;
+  
+}
+
+.contact .left .box-subtitles .dato {
+    color: #000000;
+    font-size: 16px;
+  
+}
+
+.contact .right {
+    float: right;
+    width: 680px;
+  
+}
+
+.contact .right .box-form {
+  background: url("/bundles/vaxfront/images/contacto/box-form.png") no-repeat scroll 0 0 #FFFFFF;
+  width: 658px;
+  height: 405px;
+  margin: 0 0 0 15px;
+}
+
+.contact .right .box-form form {
+    /*float: right;*/
+    /*margin: 20px 20px 0 0;*/
+}
+
+.contact .right .box-form form .izq  {
+  float: left;
+  width: 320px;
+  margin: 30px 0 0 0;
+
+}
+
+.contact .right .box-form form .izq div {
+  float: left;
+  margin: 20px 0 0 20px;
+}
+
+.contact .right .box-form form .izq div label {
+  float: left;
+  width: 100%;
+  color: #AEAEAE;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.contact .right .box-form form .izq div input {
+  border: 1px solid #9A041F;
+  width: 275px;
+  height: 25px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.contact .right .box-form form .der  {
+  float: right;
+  width: 330px;
+  margin: 45px 0 0 0;
+}
+
+.contact .right .box-form form .der div {
+  
+}
+
+.contact .right .box-form form .der div label {
+  color: #AEAEAE;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.contact .right .box-form form .der div textarea {
+  border: 1px solid #9A041F;
+  width: 300px;
+  height: 260px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+}
+
+.contact .right .box-form form .der input {
+  
+  
+}
+
+.contact .right .bottons {
+  background: url("/bundles/vaxfront/images/contacto/fondo-links-cont.jpg") no-repeat scroll 0 0 #FFFFFF;
+  width: 640px;
+  height: 111px;
+  float: left;
+  margin: 0 0 0 24px;  
+}
+
+.contact .right .bottons a.msn {
+  background: url("/bundles/vaxfront/images/contacto/msn-link.png") no-repeat scroll 7px 10px transparent;
+  width: 304px;
+  height: 90px;
+  float: left;
+}
+
+.contact .right .bottons a.msn:hover {
+  background: url("/bundles/vaxfront/images/contacto/msn-hover.png") no-repeat scroll 7px 10px transparent;
+}
+
+
+.contact .right .bottons a.facebook {
+  background: url("/bundles/vaxfront/images/contacto/face-link.png") no-repeat scroll 24px 10px transparent;
+  width: 325px;
+  height: 90px;
+  float: left;
+}
+
+.contact .right .bottons a.facebook:hover {
+  background: url("/bundles/vaxfront/images/contacto/face-hover.png") no-repeat scroll 24px 10px transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
