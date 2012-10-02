@@ -981,7 +981,7 @@ body {
 }
 
 .out-container .footer .inner-footer .images a img {
-  /*margin: 5px 12px 5px 12px;*/
+  margin: 5px 0 5px 0;
 }
 
 .out-container .footer .inner-footer .line{
