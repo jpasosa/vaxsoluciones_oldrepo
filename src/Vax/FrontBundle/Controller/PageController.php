@@ -57,12 +57,18 @@ class PageController extends Controller
 
     // SERVICIOS -- NOTEBOOK
     public function notebookAction() {
-        return $this->render('VaxFrontBundle:Page:notebook.html.twig');
+        $img_files = scandir('bundles/vaxfront/images/servicios/notebooks');
+        unset($img_files[0]);
+        unset($img_files[1]);
+        return $this->render('VaxFrontBundle:Page:notebook.html.twig', array('images' => $img_files));
     }
 
     // SERVICIOS -- PLACAS DE VIDEO
     public function videocardAction() {
-        return $this->render('VaxFrontBundle:Page:videocard.html.twig');
+        $img_files = scandir('bundles/vaxfront/images/servicios/videos');
+        unset($img_files[0]);
+        unset($img_files[1]);
+        return $this->render('VaxFrontBundle:Page:videocard.html.twig', array('images' => $img_files));
     }
 
     // SERVICIOS -- SEGURIDAD Y COMUNICACIONES

@@ -15,11 +15,9 @@
                 <p> REPARACION Y TESTEO </p>
             </div>
             <div id="slideshow">
-                <img class="image-rigth active" src="{{ asset('bundles/vaxfront/images/servicios/videos/video-01.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/videos/video-02.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/videos/video-03.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/videos/video-04.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/videos/video-05.jpg') }}" alt="chip" width="160" height="150" />
+                {% for im in images %}
+                    <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/videos/'~im) }}" alt="placa-video" width="160" height="150" />
+                {% endfor %}
             </div>
         </div>
         <div class="subtitle"> Fallas típicas: </div>

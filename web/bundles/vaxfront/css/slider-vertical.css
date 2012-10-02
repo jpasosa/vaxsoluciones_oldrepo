@@ -15,7 +15,7 @@
   font-family: 'Quantico', Arial;
   font-size: 22px;
   font-weight: bold;
-  margin: 20px auto 10px 20px;
+  margin: 10px auto 10px 20px;
   
 }
 
@@ -172,3 +172,21 @@
 .contenedor-slider .mover-slider-vertical .bajar-slider:hover {
 
 }
+
+
+
+/*VERT TODAS*/
+
+a.ver-todas {
+  text-decoration: none;
+  float: left;
+  height: 0px;
+}
+
+a.ver-todas img {
+  position: relative;
+  float: right;
+  top: 302px;
+  left: 20px;
+}
+

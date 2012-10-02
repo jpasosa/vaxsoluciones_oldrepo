@@ -13,11 +13,9 @@
                 <p> Todas las notebook que contengan el GPU NVidia 6100/6150 que cuentan con aceleradora grafica GForce suelen tener distintas fallas debido a las altas temperaturas con las que trabajan. </p>
             </div>
             <div id="slideshow">
-                <img class="image-rigth active" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-01.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-02.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-03.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-04.jpg') }}" alt="chip" width="160" height="150" />
-                <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/note-05.jpg') }}" alt="chip" width="160" height="150" />
+                {% for im in images %}
+                    <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/servicios/notebooks/'~im) }}" alt="notebook" width="160" height="150" />
+                {% endfor %}
             </div>
         </div>
         <div class="subtitle"> Detalle de Fallas: </div>
