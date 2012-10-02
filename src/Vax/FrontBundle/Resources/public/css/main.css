@@ -824,6 +824,108 @@ body {
 
 
 
+/*OFERTAS*/
+
+.ofertas {
+  float: left;
+  margin: 30px auto 30px auto;
+
+}
+
+.ofertas .left {
+    float: left;
+    width: 278px;
+    border-right: 1px solid #9A041F;
+    height: 960px;
+  
+}
+
+.ofertas .left img {
+  margin: 20px 0 20px 33px;
+}
+
+.ofertas .left .texto {
+    font-family: 'Quantico', arial;
+    color: #AEAEAE;
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+}
+
+
+.ofertas .right {
+    float: right;
+    width: 680px;
+  
+}
+
+.ofertas .right .oferta-box {
+  width: 140px;
+  height: 200px;
+  border: 1px solid #AEAEAE;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  margin: 20px 30px 20px 30px;
+}
+
+.ofertas .right .oferta-box .title {
+  border-bottom: 1px solid #AEAEAE;
+  text-align: center;
+  width: 100%;
+  font-family: 'Quantico', arial;
+  font-size: 14px;
+  color: #9A041F;
+}
+
+.ofertas .right .oferta-box img {
+  display: block;
+  margin: 15px auto 5px auto;
+}
+
+.ofertas .right .oferta-box .description {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+
+}
+
+.ofertas .right .oferta-box .price {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
+.ofertas .right .oferta-box .warranty {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -130,6 +130,12 @@
                                 {% block contacto %}
                                 {% endblock %}
                             </div>
+                    {% elseif (app.request.get('_route') == 'ofertas')  %} <!-- sección ofertas -->               
+                            <div class="ofertas">
+                                {% block ofertas %}
+                                {% endblock %}
+                            </div>
+                    
                     {% else %}                    
                             {% if (app.request.get('_route') == 'homepage')  %}
                                 <div class="home-col-left">
