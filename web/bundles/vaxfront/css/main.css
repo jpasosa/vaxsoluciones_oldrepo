@@ -186,7 +186,6 @@ body {
 }
 
 .out-container .header .inner-header .nav-container div ul.nav li a {
-  
 
 }
 
@@ -195,6 +194,11 @@ body {
 
 }
 
+.out-container .header .inner-header .nav-container div ul.nav li a.active {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 
 
@@ -209,9 +213,9 @@ body {
 /*SUBMENUES*/
 
 .out-container .header .inner-header .sub-nav {
-    float: right;
+    float: left;
     height: 1px; /*para que no baje el banner cuando muestra el submenu*/
-
+    margin: 0 0 0 100px;
 }
 
 .out-container .header .inner-header .sub-nav div {
@@ -244,6 +248,12 @@ body {
 .out-container .header .inner-header .sub-nav div ul.sub-nav li a:hover {
   color: #000000;
 
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a.active {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 

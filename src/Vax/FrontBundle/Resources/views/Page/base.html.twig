@@ -50,13 +50,26 @@
                             <div class="nav-container">
                                 <div>
                                     <ul class="nav">
-                                        <li> <a href="{{ path('homepage') }}"> Home </a> </li>
-                                        <li> <a href="{{ path('nosotros') }}"> Nosotros </a> </li>
-                                        <li> <a href="{{ path('servicios') }}"> Servicios </a> </li>
-                                        <li> <a href="{{ path('clientes') }}"> Nuestros Clientes </a> </li>
-                                        <li> <a href="{{ path('ubiquiti') }}"> Ubiquiti </a> </li>
-                                        <li> <a href="{{ path('ofertas') }}"> Ofertas </a> </li>
-                                        <li> <a href="{{ path('contacto') }}"> Contacto </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'homepage') %}active{% endif %}"
+                                                        href="{{ path('homepage') }}"> Home </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'nosotros'
+                                                                        or app.request.get('_route') == 'historia') %}active{% endif %}"
+                                                        href="{{ path('nosotros') }}"> Nosotros </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'servicios'
+                                                                        or app.request.get('_route') == 'garantia'
+                                                                        or app.request.get('_route') == 'notebook'
+                                                                        or app.request.get('_route') == 'placavideo'
+                                                                        or app.request.get('_route') == 'seguridad'
+                                                                        or app.request.get('_route') == 'faq') %}active{% endif %}"
+                                                        href="{{ path('servicios') }}"> Servicios </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'clientes') %}active{% endif %}"
+                                                        href="{{ path('clientes') }}"> Nuestros Clientes </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'ubiquiti') %}active{% endif %}"
+                                                        href="{{ path('ubiquiti') }}"> Ubiquiti </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'ofertas') %}active{% endif %}"
+                                                        href="{{ path('ofertas') }}"> Ofertas </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'contacto') %}active{% endif %}"
+                                                        href="{{ path('contacto') }}"> Contacto </a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -69,8 +82,10 @@
                                   <div class="sub-nav">
                                     <div>
                                       <ul class="sub-nav">
-                                        <li> <a href="{{ path('nosotros') }}"> Quienes Somos </a> </li>
-                                        <li> <a href="{{ path('historia') }}"> Historia </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'nosotros') %}active{% endif %}"
+                                                        href="{{ path('nosotros') }}"> Quienes Somos </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'historia') %}active{% endif %}"
+                                                        href="{{ path('historia') }}"> Historia </a> </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -92,12 +107,18 @@
                                   <div class="sub-nav">
                                     <div>
                                       <ul class="sub-nav">
-                                        <li> <a href="{{ path('garantia') }}"> Garantía </a> </li>
-                                        <li> <a href="{{ path('motherboard') }}"> Motherboard </a> </li>
-                                        <li> <a href="{{ path('notebook') }}"> Notebook </a> </li>
-                                        <li> <a href="{{ path('placavideo') }}"> Placa de Video </a> </li>
-                                        <li> <a href="{{ path('seguridad') }}"> Seguridad </a> </li>
-                                        <li> <a href="{{ path('faq') }}"> Faq (Preg. Frecuentes) </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'garantia') %}active{% endif %}"
+                                                        href="{{ path('garantia') }}"> Garantía </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'servicios') %}active{% endif %}"
+                                                        href="{{ path('motherboard') }}"> Motherboard </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'notebook') %}active{% endif %}"
+                                                        href="{{ path('notebook') }}"> Notebook </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'placavideo') %}active{% endif %}"
+                                                        href="{{ path('placavideo') }}"> Placa de Video </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'seguridad') %}active{% endif %}"
+                                                        href="{{ path('seguridad') }}"> Seguridad </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'faq') %}active{% endif %}"
+                                                        href="{{ path('faq') }}"> Faq (Preg. Frecuentes) </a> </li>
                                       </ul>
                                     </div>
                                   </div>
