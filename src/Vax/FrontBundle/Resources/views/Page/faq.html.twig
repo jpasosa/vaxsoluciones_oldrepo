@@ -10,13 +10,18 @@
         
         <div class="subtitle"> CHIPSET </div>
         <ul class="list">
-            <!-- <a href="javascript:$.scrollTo('#chip',800);" id="top"> -->
+            <a href="{{ path('faq') }}#faq01" name="top">
                 <li> <span> • </span> ¿Qué es el chipset? </li>
-            <!-- </a> -->
-            <li> <span> • </span> ¿Antes de comprar un MotherBoard (placa base)? </li>
-            <li> <span> • </span> Recomendaciones de Chipset. </li>
+            </a>
+            <a href="{{ path('faq') }}#faq02" name="top">
+                <li> <span> • </span> ¿Antes de comprar un MotherBoard (placa base)? </li>
+            </a>
+            <a href="{{ path('faq') }}#faq03" name="top">
+                <li> <span> • </span> Recomendaciones de Chipset. </li>
+            </a>
         </ul>
         
+        <a name="faq01"> </a>
         <div class="subtitle"> ¿Qué es el chipset? </div>
         <div class="simple-text">
             <p>El "chipset" es el conjunto (set) de chips que se encargan de controlar determinadas funciones del ordenador, como la forma en que interacciona el microprocesador con la memoria o la caché, o el control de los puertos y slots ISA, PCI, AGP, USB.</p>
@@ -31,17 +36,19 @@
         <div class="simple-text">
             <p>Debe destacarse el hecho de que el uso de un buen chipset no implica que la placa base en conjunto sea de calidad. Como ejemplo, muchas placas con chipsets que darían soporte a enormes cantidades de memoria, 4GB o más, no incluyen zócalos de memoria para más de 2GB. O bien el caso de los puertos, cuyo soporte está previsto en la casi totalidad de los chipsets de los últimos dos años pero que hasta fecha reciente no han tenido los conectores necesarios en las placas base. </p>
         </div>
+        <a class="to-menu" href="{{ path('faq') }}#top"> Volver </a>
 
-
-        <div id="chip" class="subtitle"> ¿Antes de comprar un MotherBoard (placa base)?  </div>
+        <a name="faq02"> </a>
+        <div  class="subtitle"> ¿Antes de comprar un MotherBoard (placa base)?  </div>
         <div class="simple-text">
             <p>Chipset y placa base forman un conjunto indisoluble y de la máxima importancia, por lo que su compra debe estar acompañada de una cierta reflexión. Lo primero es recordar que un buen chipset sólo no hace una buena placa; si encontramos dos placas con el mismo chipset pero una cuesta el doble que la otra, por algo será (aunque a veces ese algo es simplemente la marca de la placa, por ejemplo las placas Intel, que en general no son tan avanzadas como las Asus, Iwill o Gigabyte pero que cuestan lo mismo o más que éstas...)</p>
             <p>Así mismo, una placa debe ser comprada pensando en el futuro. Por ejemplo, si vamos a comprar una para Pentium 4, merece la pena comprar una con un chipset capaz de trabajar a 1066 MHz de bus con lo que podremos ampliarla en el futuro a micros a 3 ghz MHz o más, cosa que no podremos hacer si compramos una LX, por ejemplo. </p>
             <p>No se obsesione con el Intel Inside. No es que le tenga una manía especial a Intel, y si la tuviera, me la aguantaría; se trata de que mucha gente prefiere dejarse llevar por el atractivo de una marca sin informarse de las características de lo que compra.  </p>
             <p>Y por último, estudie bien la compra. Puede ser que el chipset admita mucha memoria, pero que la placa tenga pocos zócalos para instalarla; o que estemos comprando una placa base o una computadora de segunda mano, y realmente nos importe más que la memoria sea suficiente y fácilmente ampliable que el hecho de que tenga un chipset sin PCI EXPRESS o sin SATA , cuando puede que no vayamos a usar uno ni otro. </p>
         </div>
+        <a class="to-menu" href="{{ path('faq') }}#top"> Volver </a>
 
-
+        <a name="faq03"> </a>
         <div class="subtitle"> Recomendaciones de Chipset  </div>
         <div class="simple-text"> VIA: </div>
         <div class="simple-text">
@@ -67,11 +74,13 @@
         <div class="simple-text">
             <p>En definitiva, mejor compra un chipset NVIDIA tanto para AMD como INTEL. Un INTEL para P4 (otra mainboard que no sea made by intel ) y para AMD un VIA, después SIS como ultima opción.  </p>
         </div>
+        <a class="to-menu" href="{{ path('faq') }}#top"> Volver </a>
 
 
 
 
     </div>
-{% endblock %}
 
+
+{% endblock %}
 

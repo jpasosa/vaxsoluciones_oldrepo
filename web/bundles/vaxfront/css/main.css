@@ -526,6 +526,10 @@ body {
   margin: 10px auto 10px 30px;
 }
 
+.out-container .content .col-left .content-common ul.list a {
+  text-decoration: none;
+}
+
 .out-container .content .col-left .content-common ul.list li {
   margin: 10px auto 10px auto;
   font-size: 12px;
@@ -548,6 +552,14 @@ body {
 .out-container .content .col-left .content-common .simple-text p {
   margin: 10px auto 10px auto;
 }
+
+.out-container .content .col-left .content-common .to-menu {
+  color: #5C5959;
+  float: right;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 
 
 
