@@ -626,7 +626,7 @@ body {
 
 .contact .left {
     float: left;
-    width: 270px;
+    width: 278px;
   
 }
 
@@ -640,31 +640,44 @@ body {
 .contact .left .description {
     color: #AEAEAE;
     margin: 20px auto 20px auto;
-  
+    font-size: 17px;
+    /*text-align: justify;*/
+}
+
+.contact .left .description img {
+  border: 1px solid #9A041F;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  margin: 0 10px 5px 0;
 }
 
 .contact .left .box-subtitles {
       font-family: 'Quantico', arial;
-
-  
+      float: left;
+    width: 100%;
+    margin: 20px 0 20px 0;
 }
 
 .contact .left .box-subtitles img {
-  
-  
+  float: left;
+  margin: 0 10px 0 0;
 }
 
 .contact .left .box-subtitles .title {
     color: #9A041F;
     font-size: 14px;
-    margin: 20px auto 0;
+    margin: 5px auto 0;
   
 }
 
 .contact .left .box-subtitles .dato {
     color: #000000;
     font-size: 16px;
-  
+}
+
+.contact .left .box-subtitles .dato.fine {
+    font-size: 15px;
 }
 
 .contact .right {
@@ -712,6 +725,9 @@ body {
   height: 25px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  font-size: 16px;
+  padding: 0 0 0 5px;
+  color: #AEAEAE;
 }
 
 .contact .right .box-form form .der  {
@@ -739,12 +755,23 @@ body {
   height: 260px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  
+  font-size: 16px;
+  padding: 5px 0 0 5px;
+  color: #AEAEAE;
 }
 
-.contact .right .box-form form .der input {
-  
-  
+.contact .right .box-form form .der input.btn-submit {
+  border: none;
+  background: url("/bundles/vaxfront/images/contacto/enviar-link.png") no-repeat scroll 0 0 transparent;
+  width: 80px;
+  height: 21px;
+  float: right;
+  margin: 15px 30px 0 0;
+}
+
+.contact .right .box-form form .der input.btn-submit:hover {
+  background: url("/bundles/vaxfront/images/contacto/enviar-hover.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
 }
 
 .contact .right .bottons {

@@ -9,22 +9,23 @@
     <div class="left">
         <h2 class="title"> CONTACO </h2>
         <div class="description">
-            Podés contactarnos telefónicamente, de Lunes a Viernes de 15hs a 20hs, también vía e-mail o utilizando el siguiente formulario de contacto.
+            <img src="{{ asset('bundles/vaxfront/images/contacto/img_contacto.jpg') }}" alt="atención telefónica"  width="160" height="150" />
+            Podés contactarnos, de Lunes a Viernes de 15hs a 20hs, también vía e-mail o utilizando el siguiente formulario de contacto.
         </div>
         <div class="box-subtitles"> <!-- telefono -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/xxxx.jpg') }}" alt=""  width="20" height="20" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/tel.jpg') }}" alt=""  width="60" height="43" />
             <h3 class="title"> TELÉFONO </h3>
             <div class="dato"> (5411) 4585.4041 </div>
         </div>
         <div class="box-subtitles"> <!-- celular -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/xxxx.jpg') }}" alt=""  width="20" height="20" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/celular.jpg') }}" alt=""  width="60" height="60" />
             <h3 class="title"> CELULAR </h3>
             <div class="dato"> (15) 5497.2228 </div>
         </div>
         <div class="box-subtitles"> <!-- email -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/xxxx.jpg') }}" alt=""  width="20" height="20" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/email-icono.png') }}" alt=""  width="60" height="60" />
             <h3 class="title"> E-MAIL </h3>
-            <div class="dato"> info@vaxsoluciones.com.ar </div>
+            <div class="dato fine"> info@vaxsoluciones.com.ar </div>
         </div>
 
 
@@ -46,7 +47,7 @@
                     {{ form_row(form.body) }}
 
                     {{ form_rest(form) }}
-                    <input type="submit" value="Submit" />
+                    <input class="btn-submit" type="submit" value="" />
                 </div>
 
             </form>
