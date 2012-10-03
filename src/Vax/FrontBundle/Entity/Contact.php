@@ -3,17 +3,35 @@
 
 namespace Vax\FrontBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 class Contact
 {
     
+
     protected $name;
 
+
+    /**
+     * @Assert\NotBlank(
+     *     message = "Debes escribir un mail.")
+     * @Assert\Email(
+     *     message = "Email no válido.")
+     * 
+     */
     protected $email;
 
     protected $telephone;
 
     protected $subject;
 
+
+    /**
+     * @Assert\NotBlank(
+     *     message = "Debes escribir un comentario.")
+     * 
+     */
     protected $body;
 
     public function getName()

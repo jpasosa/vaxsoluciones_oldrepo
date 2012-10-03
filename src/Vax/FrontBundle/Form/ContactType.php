@@ -10,13 +10,19 @@ use Symfony\Component\Form\FormBuilderInterface; // tuve que usar esto
 class ContactType extends AbstractType
 {
 
+    // aqui toma las validaciones antes de pulsar el enviar
     public function buildForm(FormBuilderInterface $builder, array $options)
     // public function buildForm(FormBuilder $builder, array $options)
     {
-        $builder->add('name');
-        $builder->add('email', 'email');
-        $builder->add('subject');
-        $builder->add('body', 'textarea');
+        $builder->add('name', 'text', array('required' => false));
+        
+        $builder->add('email', 'text', array('required' => false));
+        
+        $builder->add('subject', 'text', array('required' => false));
+        
+        $builder->add('body', 'textarea', array('required' => false));
+
+
     }
 
     public function getName()

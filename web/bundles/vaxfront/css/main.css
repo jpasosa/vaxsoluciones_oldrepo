@@ -841,6 +841,13 @@ body {
     width: 100%;
 }
 
+/* errores de validacion */
+.box-form form .izq div ul li,
+.box-form form .der div ul li {
+  color: #fb2c2c;
+  font-weight: bold;
+  font-size: 11px;
+}
 
 
 

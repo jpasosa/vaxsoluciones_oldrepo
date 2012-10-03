@@ -9,21 +9,21 @@
     <div class="left">
         <h2 class="title"> CONTACO </h2>
         <div class="description">
-            <img src="{{ asset('bundles/vaxfront/images/contacto/img_contacto.jpg') }}" alt="atención telefónica"  width="160" height="150" />
+            <!--<img src="{{ asset('bundles/vaxfront/images/contacto/img_contacto.jpg') }}" alt="atención telefónica"  width="160" height="150" /> -->
             Podés contactarnos, de Lunes a Viernes de 15hs a 20hs, también vía e-mail o utilizando el siguiente formulario de contacto.
         </div>
         <div class="box-subtitles"> <!-- telefono -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/tel.jpg') }}" alt=""  width="60" height="43" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/tel.jpg') }}" alt=""  width="40" height="40" />
             <h3 class="title"> TELÉFONO </h3>
             <div class="dato"> (5411) 4585.4041 </div>
         </div>
         <div class="box-subtitles"> <!-- celular -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/celular.jpg') }}" alt=""  width="60" height="60" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/celular.jpg') }}" alt=""  width="40" height="40" />
             <h3 class="title"> CELULAR </h3>
             <div class="dato"> (15) 5497.2228 </div>
         </div>
         <div class="box-subtitles"> <!-- email -->
-            <img src="{{ asset('bundles/vaxfront/images/contacto/email-icono.png') }}" alt=""  width="60" height="60" />
+            <img src="{{ asset('bundles/vaxfront/images/contacto/email-icono.jpg') }}" alt=""  width="40" height="40" />
             <h3 class="title"> E-MAIL </h3>
             <div class="dato fine"> info@vaxsoluciones.com.ar </div>
         </div>
@@ -37,15 +37,15 @@
                 
                 <div class="izq">
                     {{ form_errors(form) }}
-
-                    {{ form_row(form.name) }}
-                    {{ form_row(form.email) }}
-                    {{ form_row(form.subject) }}
+                    
+                    {{ form_row(form.name, { 'label': 'Nombre y Apellido' }) }}
+                    {{ form_row(form.email) }}                    
+                    {{ form_row(form.subject, { 'label': 'Título' }) }}
+                    
                 </div>
 
                 <div class="der">
-                    {{ form_row(form.body) }}
-
+                    {{ form_row(form.body, { 'label': 'Mensaje' }) }}
                     {{ form_rest(form) }}
                     <input class="btn-submit" type="submit" value="" />
                 </div>
@@ -62,10 +62,14 @@
         </div>
     </div>
 
+<script>
+    $(window).load(function() {
+        $("input#contact_email").css('oninvalid', 'this.setCustomValidity("Witinnovation")');
+    });
+</script>
 
 
 
 
 {% endblock %}
-
 
