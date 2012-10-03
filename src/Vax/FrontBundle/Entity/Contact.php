@@ -6,6 +6,9 @@ namespace Vax\FrontBundle\Entity;
 class Contact
 {
     
+    /**
+     * @Doctrine\ORM\Mapping\Column(name="name", type="string", nullable=true)
+     */
     protected $name;
 
     protected $email;

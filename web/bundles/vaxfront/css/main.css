@@ -831,6 +831,15 @@ body {
 }
 
 
+/*mensaje recibido*/
+
+.contact .right .box-form .recibido {
+    color: #AEAEAE;
+    font-size: 24px;
+    margin: 50px 0 0 50px;
+    float: left;
+    width: 100%;
+}
 
 
 

@@ -92,4 +92,6 @@ ofertas:
 contacto:
     pattern:  /contacto
     defaults: { _controller: VaxFrontBundle:Page:contact }
+    requirements:
+        _method:  GET|POST
 

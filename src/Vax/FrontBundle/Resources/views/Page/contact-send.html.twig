@@ -1,0 +1,56 @@
+{% extends 'VaxFrontBundle:Page:base.html.twig' %}
+
+{% block title %}
+  :: VAX SOLUCIONES ::
+{% endblock %}
+
+{% block contacto %}
+    
+    <div class="left">
+        <h2 class="title"> CONTACO </h2>
+        <div class="description">
+            <img src="{{ asset('bundles/vaxfront/images/contacto/img_contacto.jpg') }}" alt="atención telefónica"  width="160" height="150" />
+            Podés contactarnos, de Lunes a Viernes de 15hs a 20hs, también vía e-mail o utilizando el siguiente formulario de contacto.
+        </div>
+        <div class="box-subtitles"> <!-- telefono -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/tel.jpg') }}" alt=""  width="60" height="43" />
+            <h3 class="title"> TELÉFONO </h3>
+            <div class="dato"> (5411) 4585.4041 </div>
+        </div>
+        <div class="box-subtitles"> <!-- celular -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/celular.jpg') }}" alt=""  width="60" height="60" />
+            <h3 class="title"> CELULAR </h3>
+            <div class="dato"> (15) 5497.2228 </div>
+        </div>
+        <div class="box-subtitles"> <!-- email -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/email-icono.png') }}" alt=""  width="60" height="60" />
+            <h3 class="title"> E-MAIL </h3>
+            <div class="dato fine"> info@vaxsoluciones.com.ar </div>
+        </div>
+
+
+    </div>
+
+    <div class="right">
+        <div class="box-form">
+            <div class="recibido">Mensaje Enviado! </div>
+            <div class="recibido"> Muchas gracias por escribirnos, </div>
+            <div class="recibido"> contestaremos a la brevedad. </div>
+        </div>
+        <div class="bottons">
+            <a class="msn" href="#">
+
+            </a>
+            <a class="facebook" href="#">
+
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
+
+
