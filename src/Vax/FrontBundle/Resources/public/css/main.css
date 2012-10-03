@@ -215,7 +215,7 @@ body {
 .out-container .header .inner-header .sub-nav {
     float: left;
     height: 1px; /*para que no baje el banner cuando muestra el submenu*/
-    margin: 0 0 0 100px;
+    margin: 0 0 0 130px;
 }
 
 .out-container .header .inner-header .sub-nav div {
@@ -655,7 +655,7 @@ body {
   
 }
 
-.contact .left .title {
+ .left .title {
     font-family: 'Quantico', arial;
     color: #9A041F;
     font-size: 20px;
@@ -686,13 +686,13 @@ body {
 
 .contact .left .box-subtitles img {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 25px 0 0;
 }
 
 .contact .left .box-subtitles .title {
     color: #9A041F;
     font-size: 14px;
-    margin: 5px auto 0;
+    margin: 0 auto 0 auto;
   
 }
 
@@ -876,7 +876,6 @@ body {
 .ofertas .left {
     float: left;
     width: 278px;
-    border-right: 1px solid #9A041F;
     height: 960px;
   
 }
@@ -895,8 +894,8 @@ body {
 
 .ofertas .right {
     float: right;
-    width: 680px;
-  
+    width: 610px;
+    margin: 0 0 0 60px;
 }
 
 .ofertas .right .oferta-box {
