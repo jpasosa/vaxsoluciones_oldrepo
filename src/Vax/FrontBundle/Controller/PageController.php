@@ -24,7 +24,10 @@ class PageController extends Controller
 
     // HOMEPAGE - QUIENES SOMOS
     public function aboutusAction() {
-        return $this->render('VaxFrontBundle:Page:aboutus.html.twig');
+        $img_files = scandir('bundles/vaxfront/images/nosotros');
+        unset($img_files[0]);
+        unset($img_files[1]);
+        return $this->render('VaxFrontBundle:Page:aboutus.html.twig', array('images' => $img_files));
     }
 
     // HOMEPAGE -- HISTORIA

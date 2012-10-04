@@ -13,7 +13,13 @@
                 <p> Contamos con profesionales en electrónica digital,
                 que mediante investigación y herramientas de ultima Tecnología, permiten innovar en métodos de reparación mas efectivos y precisos.  </p>
             </div>
-            <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/nosotros/chip.jpg') }}" alt="chip" width="160" height="150" />
+            <div id="slideshow">
+                {% for im in images %}
+                        <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/nosotros/'~im) }}" alt="nosotros" width="160" height="150" />
+                {% endfor %}
+            </div>
+
+            <!-- <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/nosotros/chip.jpg') }}" alt="chip" width="160" height="150" /> -->
         </div>
         <div class="txt-box-pie">
             <p> Con más de doce años brindando nuestros servicios, tanto a empresas como a particulares. </p>
