@@ -494,7 +494,27 @@ body {
     z-index:9;
 }
 
+/*contenido especifico de ubiquiti en content-common*/
+#logo-ubi {
+    float: left;
+    margin: 18px 0 0 140px;
+}
 
+#logo-micro {
+  float: right;
+  margin: 18px 10px 0 0;
+}
+
+.column-pdf {
+    float: right;
+    margin-right:300px;
+    width: 100px;
+}
+
+.column-pdf a .images-pdf {
+  margin: 0 0 0 0;
+  /*float: right;*/
+}
 
 
 .out-container .content .col-left .content-common .txt-box-pie {
@@ -534,7 +554,7 @@ body {
 }
 
 .out-container .content .col-left .content-common ul.list li {
-  margin: 10px auto 10px auto;
+  margin: 10px auto 20px auto;
   font-size: 12px;
 }
 
@@ -595,7 +615,7 @@ body {
 
 
 
-/* NUESTOS CLIENTES */
+/* NUESTROS CLIENTES */
 
 .client-box {
   background-color: #FFFFFF;
@@ -1011,7 +1031,7 @@ body {
   color: #9A041F;
   font-size: 14px;
   float: left;
-  margin: 14px 0 0 0;
+  margin: 11px 0 0 25px;
 
 }
 

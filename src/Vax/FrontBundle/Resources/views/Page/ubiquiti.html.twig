@@ -7,12 +7,17 @@
 {% block col_left %}
     <div class="content-common">
         <h2 class="section-title"> UBIQUITI </h2>
+        
         <div class="box">
             <div class="txt-left">
-                <p> Reparamos en nuestro Laboratorio: </p>
-                <p style="margin: 20px 0 0 20px;"> • Problemas de encendido, conexión de red o WIFI. </p>
-                <p style="margin: 10px 0 0 20px;"> • Recambiamos Chip LAN y Fuentes. </p>
-                <p style="margin: 10px 0 0 20px;"> • Reparación de Pistas y Corto por filtración de agua. </p>
+                <p style="font-weight: bold; margin: 5px 0 0 5px;"> Reparamos en nuestro Laboratorio: </p>
+                <p style="margin: 10px 0 0 20px;"> • Problemas de encendido, conexión de red o WIFI. </p>
+                <p style="margin: 5px 0 0 20px;"> • Recambiamos Chip LAN y Fuentes. </p>
+                <p style="margin: 5px 0 0 20px;"> • Reparación de Pistas y Corto por filtración de agua. </p>
+                <img id="logo-ubi" src='/bundles/vaxfront/images/footer/logo1.png' 
+                    alt="ubiquiti" title="Ubiquiti" width="80" height="32" />
+                <img id="logo-micro" src='/bundles/vaxfront/images/footer/logo2.png' 
+                    alt="microtik" title="Microtik" width="80" height="32" />
             </div>
             <div id="slideshow">
                 {% for im in images %}
@@ -20,16 +25,77 @@
                 {% endfor %}
             </div>
         </div>
+        
         <div class="subtitle"> Fallas típicas: </div>
-        <ul class="list">
-            <li>
-              <span> • </span> NanoStation.
-              <a href=""> <img class="" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" /> </a>
+        <ul class="list" style="margin: 30px 0 0 30px;">
+            
+            <!-- NANO STATION -->
+            <li> <span> • </span>
+                <a href="http://www.ubnt.com/nanostation" target="_blank"> NanoStation. </a>
+                <div class="column-pdf">
+                    <a href="http://www.ubnt.com/downloads/ns2_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" title="DataSheet NS2"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/ns5_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" title="DataSheet NS5"/>
+                    </a>
+                </div>
             </li>
-            <li> <span> • </span> NanoStation Loco. </li>
-            <li> <span> • </span> Bullet. </li>
-            <li> <span> • </span> PicoStation. </li>
-            <li> <span> • </span> PowerStation.</li>
+            
+            <!-- NANO STATION LOCO -->
+            <li> <span> • </span>
+                <a href="http://www.ubnt.com/nanostationloco" target="_blank"> NanoStation Loco. </a>
+                <div class="column-pdf">
+                    <a href="http://www.ubnt.com/downloads/loco2_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" title="DataSheet NS - Loco2"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/loco5_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" title="DataSheet NS - Loco5"/>
+                    </a>
+                </div>
+            </li>
+            
+            <!-- BULLET -->
+            <li> <span> • </span>
+                <a href="http://www.ubnt.com/bullet" target="_blank"> Bullet.  </a>
+                <div class="column-pdf">
+                    <a href="http://www.ubnt.com/downloads/b2_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf bullet2" width="30" height="32" title="DataSheet Bullet 2"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/b2hp_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf bullet2 hp" width="30" height="32" title="DataSheet Bullet 2 HP"/>
+                    </a>
+                </div>
+            </li>
+            
+            <!-- PICO STATION 2-->
+            <li> <span> • </span>
+                <a href="http://www.ubnt.com/picostation" target="_blank"> PicoStation 2.  </a>
+                <div class="column-pdf">
+                    <a href="http://www.ubnt.com/downloads/pico2_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf picostation 2" width="30" height="32" title="DataSheet Pico 2 Station"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/pico2hp_ds.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf picostation 2 hp" width="30" height="32" title="DataSheet Pico 2 HP"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/pico5_ds.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf picostation 5" width="30" height="32" title="DataSheet Pico 5"/>
+                    </a>
+                </div>
+            </li>
+
+            <!-- POWER STATION -->
+            <li> <span> • </span>
+                <a href="http://www.ubnt.com/powerstation" target="_blank"> PowerStation.  </a>
+                <div class="column-pdf">
+                    <a href="http://www.ubnt.com/downloads/ps2_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf powerstation2" width="30" height="32" title="DataSheet PowerStation 2"/>
+                    </a>
+                    <a href="http://www.ubnt.com/downloads/ps5_datasheet.pdf" target="_blank">
+                        <img class="images-pdf" src="{{ asset('bundles/vaxfront/images/base/icon-pdf.jpg') }}" alt="pdf powerstation5" width="30" height="32" title="DataSheet PowerStation 5"/>
+                    </a>
+                </div>
+            </li>
         </ul>
 
 
