@@ -88,7 +88,10 @@ class PageController extends Controller
 
     // UBIQUITI
     public function ubiquitiAction() {
-        return $this->render('VaxFrontBundle:Page:ubiquiti.html.twig');
+        $img_files = scandir('bundles/vaxfront/images/ubiquiti');
+        unset($img_files[0]);
+        unset($img_files[1]);
+        return $this->render('VaxFrontBundle:Page:ubiquiti.html.twig', array('images' => $img_files));
     }
 
 

@@ -5,7 +5,35 @@
 {% endblock %}
 
 {% block col_left %}
-    sección UBIQUITI
+    <div class="content-common">
+        <h2 class="section-title"> UBIQUITI </h2>
+        <div class="box">
+            <div class="txt-left">
+                <p> Reparamos en nuestro Laboratorio: </p>
+                <p style="margin: 20px 0 0 20px;"> • Problemas de encendido, conexión de red o WIFI. </p>
+                <p style="margin: 10px 0 0 20px;"> • Recambiamos Chip LAN y Fuentes. </p>
+                <p style="margin: 10px 0 0 20px;"> • Reparación de Pistas y Corto por filtración de agua. </p>
+            </div>
+            <div id="slideshow">
+                {% for im in images %}
+                    <img class="image-rigth" src="{{ asset('bundles/vaxfront/images/ubiquiti/'~im) }}" alt="ubiquiti" width="160" height="150" />
+                {% endfor %}
+            </div>
+        </div>
+        <div class="subtitle"> Fallas típicas: </div>
+        <ul class="list">
+            <li>
+              <span> • </span> NanoStation.
+              <a href=""> <img class="" src="{{ asset('bundles/vaxfront/images/ubiquiti/icon-pdf.jpg') }}" alt="ubiquiti" width="30" height="32" /> </a>
+            </li>
+            <li> <span> • </span> NanoStation Loco. </li>
+            <li> <span> • </span> Bullet. </li>
+            <li> <span> • </span> PicoStation. </li>
+            <li> <span> • </span> PowerStation.</li>
+        </ul>
+
+
+    </div>
 {% endblock %}
 
 

@@ -538,6 +538,10 @@ body {
   font-size: 12px;
 }
 
+.out-container .content .col-left .content-common ul.list li.bold {
+  font-weight: bold;
+}
+
 .out-container .content .col-left .content-common ul.list li span {
   color: #9a041f;
   font-weight: bold;
@@ -876,8 +880,7 @@ body {
 .ofertas .left {
     float: left;
     width: 278px;
-    height: 960px;
-  
+    /*height: 960px;*/
 }
 
 .ofertas .left img {
