@@ -145,6 +145,10 @@ body {
 }
 
 
+.out-container .header .inner-header .like-facebook {
+  float: right;
+  margin: 20px 60px 0 0;
+}
 
 
 
@@ -160,7 +164,7 @@ body {
 .out-container .header .inner-header .nav-container {
     /*width: 100%;*/
     float: right;
-    margin: 90px 10px 0 0;
+    margin: 70px 10px 0 0;
 
 }
 
