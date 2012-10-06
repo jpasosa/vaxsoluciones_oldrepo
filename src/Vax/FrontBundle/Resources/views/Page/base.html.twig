@@ -55,9 +55,7 @@
                         <div class="logo">
                             <a href="{{ path('homepage') }}" > </a>
                         </div>
-                        <div class="like-facebook">
-                            <fb:like href="http://vaxsoluciones.cooph.com.ar/app_dev.php" send="true" width="100" show_faces="false" font="arial"></fb:like>
-                        </div>
+                        
                         {% block menu %}    <!-- MENU -->
                             <div class="nav-container">
                                 <div>
@@ -150,26 +148,6 @@
                                     </div>
                                 </div>
                             </div> <!-- FIN banners -->
-                            <script>
-                            $(window).load(function() {
-                                            $('#slider').nivoSlider({
-                                                effect: 'random',
-                                                slices: 4,
-                                                animSpeed: 500,
-                                                pauseTime: 3000,
-                                                directionNav: false,
-                                                controlNav: false,
-                                                controlNavThumbs: false,
-                                                pauseOnHover: false,
-                                                manualAdvance: false,
-                                                randomStart: true,
-                                                afterChange: function(){},
-                                                slideshowEnd: function(){},
-                                                lastSlide: function(){},
-                                                afterLoad: function(){}
-                                            });
-                                        });
-                            </script>
                         {% endif %}
                     </div>  <!-- FIN inner-header -->
                 {% endblock %}  <!-- FIN block HEADER -->

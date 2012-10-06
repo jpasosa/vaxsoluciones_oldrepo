@@ -145,9 +145,15 @@ body {
 }
 
 
+/*facebook*/
+
 .out-container .header .inner-header .like-facebook {
   float: right;
-  margin: 20px 60px 0 0;
+  margin: 30px 60px 0 0;
+}
+
+div.uiIconText span {
+  color: #AEAEAE !important;
 }
 
 
@@ -164,7 +170,7 @@ body {
 .out-container .header .inner-header .nav-container {
     /*width: 100%;*/
     float: right;
-    margin: 70px 10px 0 0;
+    margin: 80px 10px 0 0;
 
 }
 
@@ -1041,14 +1047,15 @@ body {
 
 .out-container .footer .inner-footer .social-red {
   float: right;
+  margin: 0 23px 0 0;
 }
 
 .out-container .footer .inner-footer .social-red .messenger {
   float: left;
-  margin: 0 20px 0 20px;
+  margin: 0 26px 0 0;
 }
 
 .out-container .footer .inner-footer .social-red .facebook {
   float: left;
-  margin: 0 20px 0 20px;
+  margin: 11px 5px 0 0;
 }
