@@ -33,6 +33,12 @@
 
     <div class="right">
         <div class="box-form">
+            {% if app.session.hasFlash('enviado') %}
+                <div class="flash-enviado">
+                    {{ app.session.flash('enviado') }}
+                </div>
+            {% endif %}
+
             <form action="{{ path('contacto') }}" method="post" {{ form_enctype(form) }} class="contact-form">
                 
                 <div class="izq">

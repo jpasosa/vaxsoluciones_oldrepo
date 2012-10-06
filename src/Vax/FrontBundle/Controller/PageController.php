@@ -129,6 +129,8 @@ class PageController extends Controller
                 // Perform some action, such as sending an email
                 // Redirect - This is important to prevent users re-posting
                 // the form if they refresh the page
+                $this->get('session')->setFlash('enviado', '¡Mensaje enviado correctamente!');
+
                 return $this->redirect($this->generateUrl('contacto'));
                 // return $this->redirect($this->generateUrl('contacto_enviado'));
             }
