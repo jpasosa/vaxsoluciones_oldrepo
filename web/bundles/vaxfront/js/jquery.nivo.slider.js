@@ -1,20 +1,9 @@
 
 // Arranco nivoSlider para que comience apenas carga la web.
 
-$(window).load(function() {
-    $('#slider').nivoSlider({
-    effect:'fade',
-    slices:4,
-    animSpeed:500,
-    pauseTime:3000,
-    directionNav:false, //Next & Prev
-    directionNavHide:false, //Only show on hover
-    controlNav:false, //1,2,3...
-    pauseOnHover:true, //Stop animation while hovering
-    beforeChange: function(){},
-    afterChange: function(){}
-    });
-});
+
+
+
 
 
 /*
