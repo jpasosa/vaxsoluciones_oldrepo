@@ -880,6 +880,13 @@ div.uiIconText span {
 }
 
 /* errores de validacion */
+.box-form form .izq div ul,
+.box-form form .der div ul {
+  float: left;
+  margin: 0 0 0 0;
+}
+
+/* errores de validacion */
 .box-form form .izq div ul li,
 .box-form form .der div ul li {
   color: #fb2c2c;
