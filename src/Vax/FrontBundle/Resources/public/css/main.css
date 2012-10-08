@@ -763,14 +763,13 @@ div.uiIconText span {
 .contact .right .box-form form .izq  {
   float: left;
   width: 320px;
-  margin: 40px 0 0 0;
+  margin: 17px 0 0 0;
 
 }
 
 .contact .right .box-form form .izq div {
   float: left;
   margin: 0;
-
 }
 
 .contact .right .box-form form .izq div label {
@@ -885,6 +884,8 @@ div.uiIconText span {
 .box-form form .der div ul li {
   color: #fb2c2c;
   font-weight: bold;
+  float: left;
+  margin: -5px 0 0 20px;
   font-size: 11px;
 }
 
