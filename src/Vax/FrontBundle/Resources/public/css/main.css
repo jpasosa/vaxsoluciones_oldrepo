@@ -468,9 +468,9 @@ div.uiIconText span {
 
 .out-container .content .col-left .content-common .box #slideshow img {
   float: left;
-/*  border-radius: 0 8px 8px 0;
-  -moz-border-radius: 0 8px 8px 0;*/
-  /*margin: 0 0 0 300px;*/
+  border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  margin: 0 0 0 10px;
 }
 
 .out-container .content .col-left .content-common .box img {
