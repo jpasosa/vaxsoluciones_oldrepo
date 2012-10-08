@@ -789,7 +789,7 @@ div.uiIconText span {
   -moz-border-radius: 10px;
   border-radius: 10px;
   font-size: 16px;
-  padding: 0 0 0 5px;
+  padding: 2px 0 0 5px;
   color: #AEAEAE;
   margin: 0 0 0 20px;
 }
