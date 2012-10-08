@@ -184,9 +184,10 @@ a.ver-todas {
 }
 
 a.ver-todas img {
-  position: relative;
+  /*position: relative;
   float: right;
   top: 302px;
-  left: 20px;
+  left: 20px;*/
+  margin: 300px 0 0 20px;
 }
 
