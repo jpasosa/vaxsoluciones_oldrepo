@@ -197,7 +197,8 @@ div.uiIconText span {
 }
 
 .out-container .header .inner-header .nav-container div ul.nav li a {
-
+  color: #AEAEAE;
+  /*text-decoration: none;*/
 }
 
 .out-container .header .inner-header .nav-container div ul.nav li a:hover {
