@@ -774,7 +774,8 @@ div.uiIconText span {
 
 .contact .right .box-form form .izq div label {
   float: left;
-  width: 100%;
+  /*width: 100%;*/
+  width: 320px;
   color: #AEAEAE;
   font-weight: bold;
   font-size: 14px;
