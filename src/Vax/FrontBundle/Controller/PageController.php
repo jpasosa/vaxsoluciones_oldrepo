@@ -126,9 +126,14 @@ class PageController extends Controller
             $form->bindRequest($request);
 
             if ($form->isValid()) {
-                // Perform some action, such as sending an email
-                // Redirect - This is important to prevent users re-posting
-                // the form if they refresh the page
+                $message = \Swift_Message::newInstance()
+                                        ->setSubject('Contacto desde la web')
+                                        ->setFrom('enquiries@symblog.co.uk')
+                                        ->setTo('jpasosa@gmail.com')
+                                        ->setBody($this->renderView('VaxFrontBundle:Page:contactEmail.txt.twig',
+                                                                        array('enquiry' => $enquiry)));
+                $this->get('mailer')->send($message);
+
                 $this->get('session')->setFlash('enviado', '¡Mensaje enviado correctamente!');
 
                 return $this->redirect($this->generateUrl('contacto'));
