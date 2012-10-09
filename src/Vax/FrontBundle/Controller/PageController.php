@@ -128,7 +128,7 @@ class PageController extends Controller
             if ($form->isValid()) {
                 $message = \Swift_Message::newInstance()
                                         ->setSubject('Contacto desde la web')
-                                        ->setFrom('enquiries@symblog.co.uk')
+                                        ->setFrom($contact->getEmail())
                                         ->setTo('jpasosa@gmail.com')
                                         ->setBody($this->renderView('VaxFrontBundle:Page:contactEmail.txt.twig',
                                                                         array('enquiry' => $contact)));
