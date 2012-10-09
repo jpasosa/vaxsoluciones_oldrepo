@@ -962,7 +962,7 @@ div.uiIconText span {
 
 .ofertas .right .oferta-box {
   width: 140px;
-  height: 200px;
+  height: 210px;
   border: 1px solid #AEAEAE;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -970,10 +970,15 @@ div.uiIconText span {
   margin: 20px 30px 20px 30px;
 }
 
+.ofertas .right .oferta-box .up-box {
+  height: 140px;
+  float: left;
+}
+
 .ofertas .right .oferta-box .title {
   border-bottom: 1px solid #AEAEAE;
   text-align: center;
-  width: 100%;
+  width: 140px;
   font-family: 'Quantico', arial;
   font-size: 14px;
   color: #9A041F;
