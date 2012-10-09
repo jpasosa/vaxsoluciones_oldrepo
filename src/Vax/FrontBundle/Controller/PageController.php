@@ -131,7 +131,7 @@ class PageController extends Controller
                                         ->setFrom('enquiries@symblog.co.uk')
                                         ->setTo('jpasosa@gmail.com')
                                         ->setBody($this->renderView('VaxFrontBundle:Page:contactEmail.txt.twig',
-                                                                        array('enquiry' => $enquiry)));
+                                                                        array('enquiry' => $contact)));
                 $this->get('mailer')->send($message);
 
                 $this->get('session')->setFlash('enviado', '¡Mensaje enviado correctamente!');
