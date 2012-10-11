@@ -95,7 +95,7 @@ body * {
 
 
 body {
-    /*background: url("/bundles/webalibresecciones/images/base/fondo_gris.jpg") repeat scroll 0 0 #fbd19e;*/
+    /*background: url("../../../bundles/webalibresecciones/images/base/fondo_gris.jpg") repeat scroll 0 0 #fbd19e;*/
     color: #000000;
     background-color: #FFFFFF;
     font-family: arial, Times New Roman;
@@ -111,7 +111,7 @@ body {
 }
 
 .out-container .header {
-  background: url("/bundles/vaxfront/images/base/pattern-header.jpg") repeat-x scroll 0 0 #FFFFFF;
+  background: url("../../../bundles/vaxfront/images/base/pattern-header.jpg") repeat-x scroll 0 0 #FFFFFF;
   /*height: 400px;*/
   float: left;
   width: 100%;
@@ -353,7 +353,7 @@ div.uiIconText span {
 }
 
 .out-container .content .home-col-left .conocer-mas a {
-  background: url("/bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
+  background: url("../../../bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
   background-position: 5px 8px;
   padding: 2px 21px 2px 22px;
   -moz-border-radius: 5px;
@@ -372,7 +372,7 @@ div.uiIconText span {
 }
 
 .out-container .content .home-col-left .historia a {
-  background: url("/bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
+  background: url("../../../bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
   background-position: 5px 8px;
   padding: 2px 21px 2px 22px;
   -moz-border-radius: 5px;
@@ -391,7 +391,7 @@ div.uiIconText span {
 
 .out-container .content .home-col-right {
   float: right;
-  background: url("/bundles/vaxfront/images/ofertas/box.png") no-repeat scroll 0 0 #FFFFFF;
+  background: url("../../../bundles/vaxfront/images/ofertas/box.png") no-repeat scroll 0 0 #FFFFFF;
   margin: 20px auto auto auto;
   width: 490px;
   height: 333px;
@@ -749,7 +749,7 @@ div.uiIconText span {
 }
 
 .contact .right .box-form {
-  background: url("/bundles/vaxfront/images/contacto/box-form.png") no-repeat scroll 0 0 #FFFFFF;
+  background: url("../../../bundles/vaxfront/images/contacto/box-form.png") no-repeat scroll 0 0 #FFFFFF;
   width: 658px;
   height: 405px;
   margin: 0 0 0 15px;
@@ -826,7 +826,7 @@ div.uiIconText span {
 
 .contact .right .box-form form .der input.btn-submit {
   border: none;
-  background: url("/bundles/vaxfront/images/contacto/enviar-link.png") no-repeat scroll 0 0 transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/enviar-link.png") no-repeat scroll 0 0 transparent;
   width: 80px;
   height: 21px;
   float: right;
@@ -834,12 +834,12 @@ div.uiIconText span {
 }
 
 .contact .right .box-form form .der input.btn-submit:hover {
-  background: url("/bundles/vaxfront/images/contacto/enviar-hover.png") no-repeat scroll 0 0 transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/enviar-hover.png") no-repeat scroll 0 0 transparent;
   cursor: pointer;
 }
 
 .contact .right .bottons {
-  background: url("/bundles/vaxfront/images/contacto/fondo-links-cont.jpg") no-repeat scroll 0 0 #FFFFFF;
+  background: url("../../../bundles/vaxfront/images/contacto/fondo-links-cont.jpg") no-repeat scroll 0 0 #FFFFFF;
   width: 640px;
   height: 111px;
   float: left;
@@ -847,26 +847,26 @@ div.uiIconText span {
 }
 
 .contact .right .bottons a.msn {
-  background: url("/bundles/vaxfront/images/contacto/msn-link.png") no-repeat scroll 7px 10px transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/msn-link.png") no-repeat scroll 7px 10px transparent;
   width: 304px;
   height: 90px;
   float: left;
 }
 
 .contact .right .bottons a.msn:hover {
-  background: url("/bundles/vaxfront/images/contacto/msn-hover.png") no-repeat scroll 7px 10px transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/msn-hover.png") no-repeat scroll 7px 10px transparent;
 }
 
 
 .contact .right .bottons a.facebook {
-  background: url("/bundles/vaxfront/images/contacto/face-link.png") no-repeat scroll 24px 10px transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/face-link.png") no-repeat scroll 24px 10px transparent;
   width: 325px;
   height: 90px;
   float: left;
 }
 
 .contact .right .bottons a.facebook:hover {
-  background: url("/bundles/vaxfront/images/contacto/face-hover.png") no-repeat scroll 24px 10px transparent;
+  background: url("../../../bundles/vaxfront/images/contacto/face-hover.png") no-repeat scroll 24px 10px transparent;
 }
 
 
@@ -1039,7 +1039,7 @@ div.uiIconText span {
 /*FOOTER*/
 
 .out-container .footer {
-  background: url("/bundles/vaxfront/images/base/pattern-footer.jpg") repeat-x scroll 0 0 #FFFFFF;
+  background: url("../../../bundles/vaxfront/images/base/pattern-footer.jpg") repeat-x scroll 0 0 #FFFFFF;
   float: left;
   width: 100%;
   height: 256px;
