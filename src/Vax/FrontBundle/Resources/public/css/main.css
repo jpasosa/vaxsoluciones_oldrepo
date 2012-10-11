@@ -135,7 +135,7 @@ body {
 }
 
 .out-container .header .inner-header .logo a{
-  background: url("/bundles/vaxfront/images/base/logo.png") no-repeat scroll 0 0 transparent;
+  background: url("/../bundles/vaxfront/images/base/logo.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 84px;
   /*text-indent: -9999px;*/
