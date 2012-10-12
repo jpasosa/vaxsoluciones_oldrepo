@@ -146,7 +146,7 @@
 .contenedor-slider .mover-slider-vertical .subir-slider {
   width: 22px;
   height: 28px;
-  background:url(/bundles/vaxfront/images/ofertas/up.png);
+  background:url(../../../bundles/vaxfront/images/ofertas/up.png);
   -moz-background-size:80px 60px; /* Firefox 3.6 */
   background-repeat:no-repeat;
   background-position: top left;
@@ -161,7 +161,7 @@
 .contenedor-slider .mover-slider-vertical .bajar-slider {
   width: 22px;
   height: 28px;
-  background:url(/bundles/vaxfront/images/ofertas/down.png);
+  background:url(../../../bundles/vaxfront/images/ofertas/down.png);
   -moz-background-size:80px 60px; /* Firefox 3.6 */
   background-repeat:no-repeat;
   background-position: top left;
