@@ -341,7 +341,11 @@
 			// Get the key in lower case form
 			key = String.fromCharCode(keycode).toLowerCase();
 			// Verify the keys to close the ligthBox
-			if ( ( key == settings.keyToClose ) || ( key == 'x' ) || ( keycode == escapeKey ) ) {
+			
+			// if ( ( key == settings.keyToClose ) || ( key == 'x' ) || ( keycode == escapeKey ) ) {
+			// 	_finish();
+			// }
+			if ( ( key == settings.keyToClose ) || ( key == 'x' ) || ( keycode == 27 ) ) {
 				_finish();
 			}
 			// Verify the key to show the previous image
