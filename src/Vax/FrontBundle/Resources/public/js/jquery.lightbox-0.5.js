@@ -28,7 +28,7 @@
 			fixedNavigation:		false,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
 			// Configuration related to images
 			imageLoading:			'../../../bundles/vaxfront/images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
-			imageBtnPrev:			'../../../bundles/vaxfront/images/lightbox/anterior.png',			// (string) Path and the name of the prev button image
+			imageBtnPrev:			'bundles/vaxfront/images/lightbox/anterior.png',			// (string) Path and the name of the prev button image
 			imageBtnNext:			'../../../bundles/vaxfront/images/lightbox/siguiente.png',			// (string) Path and the name of the next button image
 			imageBtnClose:			'../../../bundles/vaxfront/images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
 			imageBlank:				'../../../bundles/vaxfront/images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
@@ -261,7 +261,7 @@
 			// Show the prev button, if not the first image in set
 			if ( settings.activeImage != 0 ) {
 				if ( settings.fixedNavigation ) {
-					$('#lightbox-nav-btnPrev').css({ 'background' : 'url(' + settings.imageBtnPrev + ') left 15% no-repeat' })
+					$('#lightbox-nav-btnPrev').css({ 'background' : 'url(' + '../../../' + settings.imageBtnPrev + ') left 15% no-repeat' })
 						.unbind()
 						.bind('click',function() {
 							settings.activeImage = settings.activeImage - 1;
