@@ -29,7 +29,7 @@
 			// Configuration related to images
 			imageLoading:			'/../../../bundles/vaxfront/images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
 			imageBtnPrev:			'/../../../bundles/vaxfront/images/lightbox/anterior.png',			// (string) Path and the name of the prev button image
-			imageBtnNext:			'/../../../bundles/vaxfront/images/lightbox/siguiente.png',			// (string) Path and the name of the next button image
+			imageBtnNext:			'bundles/vaxfront/images/lightbox/siguiente.png',			// (string) Path and the name of the next button image
 			imageBtnClose:			'/../../../bundles/vaxfront/images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
 			imageBlank:				'/../../../bundles/vaxfront/images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
 			// Configuration related to container image box
