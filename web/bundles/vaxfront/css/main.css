@@ -135,12 +135,14 @@ body {
 }
 
 .out-container .header .inner-header .logo a{
-  background: url("../../../bundles/vaxfront/images/base/logotext2.png") no-repeat scroll 0 0 transparent;
+  background: url("../../../bundles/vaxfront/images/base/logo_nuevo.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 71px;
   /*height: 84px;*/
   /*text-indent: -9999px;*/
-  width: 204px;
+  /*width: 204px;*/
+  width: 225px;
+  
   margin: 20px 0 0 0;
 
 }
@@ -697,13 +699,13 @@ div.uiIconText span {
     font-family: 'Quantico', arial;
     color: #9A041F;
     font-size: 20px;
-    margin: 20px auto 20px auto;
+    margin: 0;
 }
 
 .contact .left .description {
     color: #AEAEAE;
-    margin: 20px auto 20px auto;
-    font-size: 17px;
+    margin: 20px auto 30px auto;
+    font-size: 15px;
     /*text-align: justify;*/
 }
 
@@ -715,11 +717,21 @@ div.uiIconText span {
   margin: 0 10px 5px 0;
 }
 
+
+.contact .left .txt-pie-mapa {
+  font-size: 11px;
+  color: #AEAEAE;
+}
+
 .contact .left .box-subtitles {
       font-family: 'Quantico', arial;
       float: left;
     width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
+}
+
+.contact .left .box-subtitles.first {
+      margin: 25px 0 0 0;
 }
 
 .contact .left .box-subtitles img {
@@ -844,7 +856,7 @@ div.uiIconText span {
   width: 640px;
   height: 111px;
   float: left;
-  margin: 0 0 0 24px;  
+  margin: 20px 0 0 24px;  
 }
 
 .contact .right .bottons a.msn {
