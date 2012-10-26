@@ -129,7 +129,8 @@ class PageController extends Controller
                 $message = \Swift_Message::newInstance()
                                         ->setSubject('Contacto desde la web')
                                         ->setFrom($contact->getEmail())
-                                        ->setTo(array('jpasosa@gmail.com', 'vilatale@gmail.com'))
+                                        // ->setTo(array('jpasosa@gmail.com', 'vilatale@gmail.com'))
+                                        ->setTo('info@vaxsoluciones.com.ar')
                                         ->setBody($this->renderView('VaxFrontBundle:Page:contactEmail.txt.twig',
                                                                         array('enquiry' => $contact)));
                 $this->get('mailer')->send($message);
