@@ -412,9 +412,34 @@ div.uiIconText span {
 
 }
 
+/*cotizaciones debajo de slide de ofertas*/
 
+.home-col-right .cotizaciones {
+  margin: 40px 0 0 20px;
+  float: left;
+  font-size: 11px;
+  width: 450px;
+}
 
+.col-right .cotizaciones {
+  margin: 40px 0 0 0;
+  float: left;
+  font-size: 11px;
+  width: 300px;  
 
+}
+
+.cotizaciones .dolarhoy {
+  float: left;
+  color: #AEAEAE;
+}
+
+.cotizaciones .dolarblue {
+  margin: 0 0 0 40px;
+  float: right;
+  color: #AEAEAE;
+
+}
 
 
 
@@ -719,6 +744,13 @@ div.uiIconText span {
 
 
 .contact .left .txt-pie-mapa {
+  margin: 10px 0 0 0;
+  font-size: 11px;
+  color: #AEAEAE;
+}
+
+.contact .left .small a {
+  text-decoration: none;
   font-size: 11px;
   color: #AEAEAE;
 }
