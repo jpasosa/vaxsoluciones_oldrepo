@@ -432,17 +432,25 @@ div.uiIconText span {
 .cotizaciones .dolarhoy {
   float: left;
   color: #AEAEAE;
+  text-decoration: none;
 }
 
 .cotizaciones .dolarblue {
   margin: 0 0 0 40px;
   float: right;
   color: #AEAEAE;
+  text-decoration: none;
 }
 
 .cotizaciones .dolarhoy a,
 .cotizaciones .dolarblue a {
   text-decoration: none;
+  color: #AEAEAE;
+}
+
+.cotizaciones .dolarhoy a:hover,
+.cotizaciones .dolarblue a:hover {
+  text-decoration: underline;
 }
 
 
