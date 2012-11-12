@@ -440,8 +440,8 @@ div.uiIconText span {
   color: #AEAEAE;
 }
 
-.cotizaciones .dolarhoy,
-.cotizaciones .dolarblue {
+.cotizaciones .dolarhoy a,
+.cotizaciones .dolarblue a {
   text-decoration: none;
 }
 
