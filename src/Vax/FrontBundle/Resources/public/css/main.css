@@ -438,7 +438,11 @@ div.uiIconText span {
   margin: 0 0 0 40px;
   float: right;
   color: #AEAEAE;
+}
 
+.cotizaciones .dolarhoy,
+.cotizaciones .dolarblue {
+  text-decoration: none;
 }
 
 
